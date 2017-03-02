@@ -4,6 +4,8 @@
 
 // your code here
 
+var 
+
 // 2. Write a Javascript function called `transmogrifier`
 // This function should accept three arguments, which you can assume will be numbers.
 // Your function should return the "transmogrified" result

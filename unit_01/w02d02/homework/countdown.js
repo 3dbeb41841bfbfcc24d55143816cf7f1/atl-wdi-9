@@ -4,17 +4,18 @@
 
 window.onload = function(){
   var timerVal = 100;
-  console.log(timerUI);
+  
 
   var countDown = function(){
     if (timerVal >= 0) {
       // Trigger All TimerUI Methods //
+      
       for (var key in timerUI) {
         timerUI[key](timerVal);
       }
-      console.log(timerVal);
+      //timerUI.drawNumericDisplay(timerVal);  <-- don't need this call, taken care of the for statement
       timerVal -= 1;
-      setTimeout(countDown, 1000);
+      setTimeout(countDown, 200);
     }
   };
   countDown();
