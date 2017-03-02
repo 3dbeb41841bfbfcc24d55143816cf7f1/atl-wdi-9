@@ -36,7 +36,7 @@ var bullseyeGame = {  //bullseyeGame if an object made of score, updateScore, mi
 
   updateScore: function(points) {
     var scoreElement = document.querySelector('.score');
-    this.score += points;  //what is this doing in here
+    this.score += points;  //what is this doing in here?
     scoreElement.innerHTML = `${this.score} points`;
   },
 
