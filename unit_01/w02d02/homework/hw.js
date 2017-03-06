@@ -1,6 +1,7 @@
 // General Assembly, WDI (Web Development Immersive) Remote, Cohort 02 (R2D2)
 // Copyright (C) 2016 Matt Brendzel under the GNU General Public License.
 // See LICENSE for details.
+var counter = 20;
 
 var timerUI = {
   drawNumericDisplay: function(timerValue){
@@ -27,14 +28,21 @@ var timerUI = {
   },
   drawCrawlers: function(timerValue){
     var crawlerPosition = (100 - timerValue) * 10;
-    if (Math.random() > .9) { //random element to give "life" to the crawler
-      document.getElementsByClassName('crawler')[0].style.marginTop = '30px';
-    } else if (Math.random() > .8) {
-        document.getElementsByClassName('crawler')[0].style.marginTop = '-30px';
-    } else if (timerValue%2 === 0) {
-      document.getElementsByClassName('crawler')[0].style.marginTop = '10px';
+    
+    craRan = Math.random();
+    
+    if (craRan > .9) { //random element to give "life" to the crawler
+      counter += 4;
+      document.getElementsByClassName('crawler')[0].style.marginTop = counter + 'px';
+    } else if (craRan > .8) {
+      counter -= 4;
+      document.getElementsByClassName('crawler')[0].style.marginTop = counter + 'px';
+    } else if (craRan > .4) {
+      counter += 3;
+      document.getElementsByClassName('crawler')[0].style.marginTop = counter + 'px';;
     } else {
-      document.getElementsByClassName('crawler')[0].style.marginTop = '-10px';
+      counter -= 1;
+      document.getElementsByClassName('crawler')[0].style.marginTop = counter + 'px';
     }
     
     document.getElementsByClassName('crawler')[0].style.marginLeft = crawlerPosition + 'px';

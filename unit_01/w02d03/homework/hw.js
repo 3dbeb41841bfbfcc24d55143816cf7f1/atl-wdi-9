@@ -18,16 +18,32 @@ const Stopwatch = {
   laps: [],
   // DO NOT EDIT ABOVE THIS LINE
   advanceTenMillisecs: function(){
-    // Your Code Here
+    this.millisecs += 10;
+    if (this.millisecs >= 1000) {
+      this.millisecs = 0;
+      this.secs++;
+    }
+    if (this.secs >= 60) {
+      this.secs = 0;
+      this.mins++;
+    }
+    if (this.mins >= 60) {
+      this.min = 0
+    }
   },
   reset: function(){
-    // Your Code Here
+    this.mins = 0;
+    this.secs = 0;
+    this.millisecs = 0;
+    this.laps = [];
   },
   start: function(){
-    // Your Code Here
+    console.log ("Stopwatch.start()");
+    this.isRunning = true;
+    this.tickClock();
   },
   stop: function(){
-    // Your Code Here
+    this.isRunning = false;
   },
   lap: function(){
     // Your Code Here
@@ -37,7 +53,9 @@ const Stopwatch = {
 /// User Interface ///
 const ViewEngine = {
   updateTimeDisplay: function(mins, secs, millisecs){
-    // Your Code Here
+    document.getElementById('mins').innerHTML = mins;
+    document.getElementById('secs').innerHTML = secs;
+    document.getElementById('millisecs').innerHTML = millisecs;
   },
   updateLapListDisplay: function(laps){
     // Your Code Here
@@ -52,13 +70,15 @@ const ViewHelpers = {
 /// Top-Level Application Code ///
 const AppController = {
   handleClockTick: function(){
-    // Your Code Here
+    ViewEngine.updateTimeDisplay(Stopwatch.mins, Stopwatch.secs, Stopwatch.millisecs);
   },
   handleClickStart: function() {
-    // Your Code Here
+    if (Stopwatch.isRunning === false) 
+      {Stopwatch.start();}
   },
   handleClickStopReset: function(){
-    // Your Code Here
+    if (Stopwatch.isRunning === true)
+      {Stopwatch.stop();}
   },
   handleClickLap: function(){
     // Your Code Here
@@ -66,5 +86,7 @@ const AppController = {
 };
 
 window.onload = function(){
-  // Attach AppController methods to the DOM as event handlers here.
+  document.getElementById('start').onclick = AppController.handleClickStart;
+  document.getElementById('lap').onclick = AppController.handleClickLap;
+  document.getElementById('stop').onclick = AppController.handleClickStopReset;
 };
