@@ -18,29 +18,45 @@ const Stopwatch = {
   laps: [],
   // DO NOT EDIT ABOVE THIS LINE
   advanceTenMillisecs: function(){
-    // Your Code Here
-  },
+    Stopwatch.millisecs +- 10;
+    ViewEngine.updateTimeDisplay();
+    if (Stopwatch.millisecs === 1000) {}
+      Stopwatch.millisecs = 0;
+      Stopwatch.secs++;
+   }
+    if (Stopwatch.secs === 60) {
+      Stopwatch.secs = 0;
+      Stopwatch.mins++;
+   }
+ }
   reset: function(){
-    // Your Code Here
+    Stopwatch.mins = 0;
+    Stopwatch.secs = 0;
+    Stopwatch.millisecs = 0;
+    ViewEngine.updateTimeDisplay();
   },
   start: function(){
-    // Your Code Here
+    Stopwatch.isRunning = false;
+    Stopwatch.tickClock();
   },
   stop: function(){
-    // Your Code Here
+    /Stopwatch.isRunning = false;
   },
   lap: function(){
-    // Your Code Here
+    Stopwatch.laps.push(document.getElementBYID('time-display').innerHTML);
+    ViewEngine.updateLapListDisplay();
   }
 };
 
 /// User Interface ///
 const ViewEngine = {
   updateTimeDisplay: function(mins, secs, millisecs){
-    // Your Code Here
+    $('#millisecs').text(Stopwatch.millisecs);
+    $('#secs').text(Stopwatch.secs);
+    $('#mins').text(Stopwatch.mins);
   },
   updateLapListDisplay: function(laps){
-    // Your Code Here
+    $('#lap-list').append('<li>' + Stopwatch.laps[Stopwatch.laps.length - 1] + "</li>")
   },
 };
 const ViewHelpers = {
