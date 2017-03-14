@@ -1,12 +1,12 @@
 ## LABTIME - Create an Express Recipes App
 
-For labtime you're gonna pair up and create a new Express app using `recipes` as a resource. 
+For labtime you're gonna pair up and create a new Express app using `recipes` as a resource.
 
 Each student will create an app. To start, Student 1 will "drive" (i.e.- create the app locally) while Student 2 offers guidance. After 30 minutes, I'll ping everyone to swap roles. So Student 2 will "drive" and create an app while Student 1 offers guidance.
 
 Remember... I'm here! Send me a Slack if anything is unclear or if you get in a jam.
 
-Your recipes will have `title`, `veggie` and `imageUrl` fields so that you can add an image. (NOTE - `imageUrl` is _optional_ if you don't want to deal with images in your view) 
+Your recipes will have `title`, `veggie` and `imageUrl` fields so that you can add an image. (NOTE - `imageUrl` is _optional_ if you don't want to deal with images in your view)
 
 Here's a deployed version of the app for reference: https://recipe-practice-app.herokuapp.com/recipes
 
@@ -19,8 +19,8 @@ Here is solution code from today's Todo app: https://github.com/ga-students/wdi-
 Use the lessons and examples from this week for guidance. Here are some suggested steps:
 
 1. Create a new Express App
-    
-    ```bash
+
+```bash
 $ mkdir recipes_app
 $ cd recipes_app
 $ npm init
@@ -35,11 +35,11 @@ $ touch server.js
 
 1. Set up your server and port using `app.listen()`
 
-1. In `server.js`, create an `app.get()` route for `/recipes`.  
+1. In `server.js`, create an `app.get()` route for `/recipes`.
 
 1. Create a `recipes.js` file in your root directory for some seed data. Add `module.exports` and hard code a few recipes. Here are some seeded recipes to get you started.
 
- ```js
+    ```js
     module.exports = {
      seededRecipes: [
         {
@@ -52,8 +52,9 @@ $ touch server.js
          imageUrl: "http://consumerrecipe.conagrafoods.com/uploadedImages/img_4740_1599.jpg"
         }
       ]
-    };    
+    };
     ```
+
 1. Add the appropriate code in the `server.js` to `require()` the `module.exports` from the `recipes.js` file.
 
 2. Test out your route using `res.send()` before dealing with views.
@@ -68,7 +69,7 @@ $ touch server.js
 
 1. Add `{{}}` to your `index.hbs` file that will render the recipes inside an `<ol></ol>` using `<li></li>` tags.
 
-2. Create a `new` route using an `app.get()` request. 
+2. Create a `new` route using an `app.get()` request.
 
 3. Create a form in the `views/recipes/new.hbs` file.
 
@@ -88,7 +89,7 @@ $ touch server.js
 
 <br />
 
-**Stretches:** 
+**Stretches:**
 
 - Add a javascript file to your app
 - Add a nav bar to your `layout.hbs`
@@ -97,5 +98,5 @@ $ touch server.js
 <br />
 
 If you finish, walk back through the appropriate steps above and add another resource to your app (e.g.- movies, songs, artists, comics).
-    
+
 <br />

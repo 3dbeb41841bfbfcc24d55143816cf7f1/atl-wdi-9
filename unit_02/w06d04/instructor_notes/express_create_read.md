@@ -34,7 +34,7 @@ SEPARATION OF CONCERNS
 - Without Separation of Concerns (SoC), it becomes incredibly hard to maintain or change an application.
 - Large applications like Facebook and Google utilize SoC since they are always adding new features, changing existing features, and working in large teams.
 - SoC decomposes apps into parts with minimal overlap of code.
-- SoC allows To allow people to work on individual pieces of the system in isolation,
+- SoC allows people to work on individual pieces of the system in isolation,
  facilitate reusability, and enable everyone to better understand the system.
 
 FORMS
@@ -65,7 +65,7 @@ So in your `/unit_02/w06d04/student_labs` folder, you should see a starter appli
 
     In `server.js`, notice that we have a `/todos` route. It contains `var seededTodos` which is an array of 2 seeded todos:
 
-    ```js
+```javascript
 /* INDEX */
 app.get('/todos', function(req,res) {
       var seededTodos = [
@@ -85,7 +85,7 @@ app.get('/todos', function(req,res) {
 ```
 
 
-3. Walk back thorough yesterday's Express Router lesson and refactor this app with the following:
+3. Walk back through yesterday's Express Router lesson and refactor this app with the following:
 
     - A `controllers/todos.js` file
     - Move your `/todos` route to the file.
@@ -204,7 +204,7 @@ file.
 
 1. For example, let's remove the `seededTodos` data from `controllers/todos.js` to our `data.js` file by adding it as a property to `module.exports` like so:
 
-    ```js
+```javascript
     module.exports = {
      seededTodos: [
         {
@@ -218,25 +218,25 @@ file.
     };
 ```
 
-    Now our `module.exports` will have a property of `seededTodos` which is an Array of todo objects.
+Now our `module.exports` will have a property of `seededTodos` which is an Array of todo objects.
 
-1. In `controllers/todos.js`, instantiate a variable to grant access to module we've created:
+2. In `controllers/todos.js`, instantiate a variable to grant access to module we've created:
 
-    ```js
+```javascript
 var data = require('../data.js');
 ```
 
-1. Now, our variable `data` is our `module.exports` object. We can access our `seededTodos` via our `controllers/todos.js` file like so:
+3. Now, our variable `data` is our `module.exports` object. We can access our `seededTodos` via our `controllers/todos.js` file like so:
 
-    ```js
+```javascript
     res.render('todos/index.hbs', {
        todos: data.seededTodos
     });
 ```
-    > This is essentially like calling `module.exports.data`
+> This is essentially like calling `module.exports.data`
 
 
-    > Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file.
+> Refresh the page and you can see that nothing changed in our browser, really we just moved the functionality into a different file.
 
 <details>
 
@@ -424,26 +424,25 @@ Based on our table earlier. What view name do we want to use to create a page th
 
 2. Inside of `/todos/new.hbs` add the html form tags:
 
-    ```html
+```html
 <form>
 </form>
 ```
 
-    Now, forms need to know where to _send_ information and the HTTP verb they'll be using to submit a request. Which verb do we use to **create** a new resource?
+Now, forms need to know where to _send_ information and the HTTP verb they'll be using to submit a request. Which verb do we use to **create** a new resource?
 
-    `POST`
+`POST`
 
-    What's the route we need to `POST` to?
+What's the route we need to `POST` to?
 
-    `http://localhost:3000/todos`
+`http://localhost:3000/todos`
 
 
-    All forms must have a `method` and an `action`.
-
+All forms must have a `method` and an `action`.
 
 1. Add method and action attributes to our form. The value of method will be `POST` and the value of action will `/todos`
 
-    ```html
+```html
 <form method="POST" action="/todos">
 </form>
 ```
@@ -669,22 +668,22 @@ We access it via the `body` property.
 
 1. Install body-parser using npm
 
-    ```bash
+```bash
 $ npm install --save body-parser
 ```
 
-    Remember this npm command will fetch the module in question, install it on our server, and load it into our `package.json`
+Remember this npm command will fetch the module in question, install it on our server, and load it into our `package.json`
 
 1. Then inside our `server.js` we need to `require()` the module and configure it.
 
-    ```javascript
-    var bodyParser = require('body-parser');
+```javascript
+var bodyParser = require('body-parser');
 
-    app.use(bodyParser.urlencoded({
-        extended: true
-    }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 ```
-    The params passed with a request will be "decoded" automatically, allowing you to use dot notation when working with JavaScript objects! The `extended: true` makes the objects more JSON-like.
+The params passed with a request will be "decoded" automatically, allowing you to use dot notation when working with JavaScript objects! The `extended: true` makes the objects more JSON-like.
 
 1. In our `.post` route, change `res.send("Create working");` to `res.send(req.body);`
 
