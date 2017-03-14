@@ -1,0 +1,50 @@
+The 6 highest-starred npm packages are:
+
+Library 1 Name: express
+
+Description:
+
+brief brief description here
+
+Fast, unopinionated, minimalist web framework for node.
+
+
+
+Library 2 Name: gulp
+
+Description:
+
+brief description here It is a toolkit that helps you automate painful or time-consuming tasks in development workflow.
+
+
+Library 3 Name: request
+
+Description:
+
+brief description here: Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default
+
+
+
+Library 4 Name: async
+
+Description:
+
+brief description here: It is a utility javascript which provides functions for working with asyncronous javascript.
+
+
+
+Library 5 Name: lodash
+
+Description:
+
+brief description here: The Loadash library exportes as Node.js modules
+
+Total Downloads last month:40,760,784
+
+
+Library 6 Name: pm2
+
+Description:
+
+brief description here: It allows to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks.
+
