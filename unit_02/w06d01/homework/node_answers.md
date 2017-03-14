@@ -6,36 +6,44 @@
 ### The 6 highest-starred npm packages are:
 
 # Library 1 Name
+-express
 
 ### Description:
-brief brief description here
+-A flexible node web applicaiton framework tool for single page apps, web sites, hybrids, etc.
 
 ### Total Downloads last month:
+-11 million
 
 # Library 2 Name
+-Gulp
 
 ### Description:
-brief description here
+-Gulp is a toolkit that helps automate time-consuming task in your development workflow
 
 ### Total Downloads last month:
+-3million
 
 # Library 3 Name
+-Lodash
 
 ### Description:
-brief description here
+A javascript utility library aiding in help with perfromance, modularity, and extras.
 
 ### Total Downloads last month:
+-40,760,784
 
 # Library 4 Name
+-moment
 
 ### Description:
-brief description here
+This javascript library is ideal for parsing, manipulating, and formatting dates.
 
 ### Total Downloads last month:
-
+-8 million
 # Library 5 Name
-
+-mongoose
 ### Description:
-brief description here
+-object mapping similar to ORM with a familiar interface within Node.js.
 
 ### Total Downloads last month:
+-1,247,758
