@@ -20,21 +20,9 @@ app.get('/', function(req,res) {
 });
 
 /* INDEX TODOS */
-app.get('/todos', function(req,res) {
-  var seededTodos = [
-    {
-      description: "get beer",
-      urgent: true
-    }, {
-      description: "dry cleaning",
-      urgent: false
-    }
-  ];
+var todosController = require('./controllers/todos.js');
+app.use('/todos', todosController);
 
-  res.render('todos/index', {
-    todos: seededTodos
-  });
-});
 
 // Start server
 app.listen(port, function() {
