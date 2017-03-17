@@ -13,4 +13,8 @@ router.get('/new', function(req, res){
   res.render('todos/new');
 });
 
+router.post('/', function(req, res){
+  res.send("Create a new todo is working!");
+});
+
 module.exports = router;
