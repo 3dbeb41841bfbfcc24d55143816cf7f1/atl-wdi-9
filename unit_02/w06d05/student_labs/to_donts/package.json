@@ -1,18 +1,18 @@
 {
-  "name": "pirates_crud_part_one_solution",
+  "name": "to_donts",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "hbs": "^2.9.0",
+    "hbs": "^4.0.1",
+    "method-override": "^2.3.7",
     "morgan": "^1.8.1"
   }
 }
