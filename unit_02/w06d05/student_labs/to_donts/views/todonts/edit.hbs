@@ -1,0 +1,13 @@
+<h1>Make your edits</h1>
+
+<form action="/todonts/{{todont.id}}?_method=PUT" method="POST">
+  <div class="">
+    <label for="description">description:</label>
+    <input type="text" name="description" value="{{todont.description}}">
+  </div>
+  <div>
+    <label for="urgent">urgent:</label>
+    <input type="text" name="urgent" value="{{todont.urgent}}">
+  </div>
+  <input type="submit" name="" value="Submit Changes">
+</form>

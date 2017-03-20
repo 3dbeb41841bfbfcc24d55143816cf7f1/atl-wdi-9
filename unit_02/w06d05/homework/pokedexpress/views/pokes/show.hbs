@@ -1,0 +1,23 @@
+<ul>
+	<li>name: {{pokemon.name}}</li>
+	<li>type: {{pokemon.type}}</li>
+  <li>stats:</li>
+  <ul>
+  <li>hp: {{pokemon.stats.hp}} </li>
+  <li>attack: {{pokemon.stats.attack}} </li>
+  <li>defense: {{pokemon.stats.defense}} </li>
+  <li>spattack: {{pokemon.stats.spattack}} </li>
+  <li>spdefense: {{pokemon.stats.spdefense}} </li>
+  <li>speed {{pokemon.stats.speed}} </li>
+  </ul>
+  <img src="{{pokemon.img}}" alt="{{pokemon.name}} pic not available" text="{{pokemon.name}}">
+</ul>
+<form action="/pokemon/{{pokemonNum}}?_method=DELETE" method="POST">
+  <input class="btn btn-danger" type="submit" value="Bye bye {{pokemon.name}}">
+</form>
+<form action="/pokemon/{{pokemonNum}}/edit">
+  <input class="btn btn-warning" type="submit" value="Change me">
+</form>
+<form action="/pokemon">
+  <input class="btn btn-default" type="submit" value="Return to Pokemon List">
+</form>

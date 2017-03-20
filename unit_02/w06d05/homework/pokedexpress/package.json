@@ -10,6 +10,11 @@
   "author": "Christine Yi, adapted from Thom Page",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "hbs": "^4.0.1",
+    "method-override": "^2.3.7",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7"
   }
 }

@@ -12,15 +12,18 @@ var todontsController = require('./controllers/to_donts.js');
 var app = express();
 
 //log
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
 app.use( logger('dev'));
-app.use('/to_donts', todontsController);
-app.use(methodOverride('_method'));
 
 //views
 app.set('view engine', 'hbs') //neverforget!!!
+app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+//after everything is set up then use methodOverride
+app.use(methodOverride('_method'));
+app.use('/todonts', todontsController);
 
 // start server 
 app.listen(3000);

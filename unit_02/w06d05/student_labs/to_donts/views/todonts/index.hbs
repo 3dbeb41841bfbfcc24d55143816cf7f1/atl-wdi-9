@@ -1,0 +1,15 @@
+<ul>
+	{{#each items}}
+	<li>{{description}}</li>
+	<li>Urgent? {{urgent}} </li>
+	<form action="/todonts/{{@index}}/edit">
+    <input class="btn btn-default" type="submit" value="EDIT">
+  </form>
+  <form action="/todonts/{{@index}}?_method=DELETE" method="POST"> 
+    <input class="btn btn-danger" type="submit" value="DELETE">
+  </form>
+	<br>
+	{{/each}}
+</ul>
+
+<a class = "btn btn-default" href="/todonts/new">Add a new to-don't</a>

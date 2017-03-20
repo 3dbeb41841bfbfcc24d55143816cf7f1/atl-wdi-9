@@ -1,0 +1,8 @@
+<ul>
+	{{#each pirates}} <!-- it's the loop that let's us say -->
+		<li>{{name}}</li>
+		<a class = "btn btn-default" href="/pirates/{{@index}}">see more</a> <!-- @index handlebars way of grabbing each counter-->
+		<br>hand
+	{{/each}}
+</ul>
+<a class = "btn btn-default" href="/pirates/new">Add a new pirate</a>
