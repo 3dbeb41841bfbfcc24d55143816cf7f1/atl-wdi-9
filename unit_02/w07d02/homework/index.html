@@ -5,11 +5,43 @@
     <title>tamagotchi OOP</title>
     <!-- DECOUPLED JS FILES -->
     <!-- tamagotchi is loaded first -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <script src="tamagotchi.js"></script>
     <!-- player is loaded afterwards so that it may refer to tamagotchi -->
     <script type="text/javascript" src="player.js"></script>
+
   </head>
   <body>
+    <div class="player 1">
+      <h1>Name: </h1>
+      <h2>CreatureType: </h2>
+      <ul>
+        <li id='food1'>Food In Tummy: </li>
+        <li id='rest1'>Restedness: </li>
+        <li id='health1'>Health: </li>
+      </ul>
+      <button id='start1'>Start this tamagotchi</button> <br>
+      <button id='feed1'>Feed me!</button>
+      <button id='rest1'>Rest!</button>
+      <button id='medicate1'>Heal!</button>
+      <button id='stop1'>Stop this tamagotchi</button> <br>
+    </div>
+    <div class="player 2">
+      <h1>Name: </h1>
+      <h2>CreatureType: </h2>
+      <ul>
+        <li id='food2'>Food In Tummy: </li>
+        <li id='rest2'>Restedness: </li>
+        <li id='health2'>Health: </li>
+      </ul>
+      <button id='start2'>Start this tamagotchi</button> <br>
+      <button id='feed2'>Feed me!</button>
+      <button id='rest2'>Rest!</button>
+      <button id='medicate2'>Heal!</button>
+      <button id='stop2'>Stop this tamagotchi</button> <br>
+    </div>
 
   </body>
 </html>

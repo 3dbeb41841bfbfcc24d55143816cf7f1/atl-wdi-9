@@ -19,6 +19,7 @@ var path    = require('path');
 var app = express();
 //app.use (logger('dev'));
 app.use( logger('dev'));
+console.log();
 
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));

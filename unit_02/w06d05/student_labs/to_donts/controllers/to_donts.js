@@ -6,9 +6,7 @@ router.get('/', (req, res) => {
 	res.render('todonts/index', {
 		items: data.seededToDonts
 	})
-})
-
-
+});
 
 router.post('/', (req, res) => {
 	var newToDont = {
@@ -18,7 +16,6 @@ router.post('/', (req, res) => {
 	data.seededToDonts.push(newToDont);
 	res.redirect('/todonts'); // finishing the new to dont
 });
-
 
 router.get('/new', function(req, res) {
   res.render('todonts/new')
@@ -35,7 +32,7 @@ router.put('/:id', function(req, res) {
 
   todontToEdit.description = req.body.description;
   todontToEdit.urgent = req.body.urgent;
-  res.redirect('/todonts');
+  res.redirect('todonts');
 });
 
 router.get('/:id/edit', function(req, res){

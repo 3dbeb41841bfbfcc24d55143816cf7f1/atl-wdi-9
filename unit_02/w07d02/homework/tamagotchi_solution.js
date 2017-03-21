@@ -16,7 +16,7 @@ var Tamagotchi = function(name, creatureType) {
     console.log('Bleeeeh! Sick!!!!!!');
     console.log(this.name + ' has current health = ' + this.health);
   };
-  this.yawn = function(){
+  this.yawn = function() {
     this.restedness--;
     console.log('Yaaaawwwwn! So tired');
     console.log(this.name + ' has current restedness = ' + this.restedness);

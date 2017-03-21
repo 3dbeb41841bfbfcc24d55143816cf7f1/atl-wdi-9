@@ -1,0 +1,13 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "![image](http://old.computerra.ru/pubimages/78659.gif)![image](http://old.computerra.ru/pubimages/78659.gif)",
+  "main": "tamagotchi.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
