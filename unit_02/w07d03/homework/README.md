@@ -30,7 +30,23 @@ entities/abstractions (e.g. Senior Paws app, above) that the app might use, and 
 This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address.
 
 ```
-Write your answer here or in a separate js file.
+var SpecificEmailSchema = new Schema({
+  user_Name   : String,
+  email       : { type: String, required: true, unique: true },
+  passWord    : String,
+  accountType : String,
+  primary     : Boolean
+
+});
+
+var UserSchema = new Schema({
+  first_name: String,
+  last_name : String,
+
+  created_at: Date,
+  updated_at: Date,
+  items: [SpecificEmailSchema]
+});
 ```
 
 ### 2. Radio on the Internet app
@@ -39,7 +55,28 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 
 
 ```
-Write your answer here or in a separate js file.
+var StationSchema = new Schema({
+  stationName   : String,
+  web-address   : String,   //href?
+  genre         : String,
+  popularity    : Number  
+});
+
+var TasteScheme = new Schema({
+        genre : String
+  })
+
+var UserSchema = new Schema({
+  first_name: String,
+  last_name : String,
+
+  created_at      : Date,
+  updated_at      : Date,
+  age             : number,
+  location        : String, //is there web-specific type for location?
+  personal-tastes : [TasteSchema],
+  stations        : [StationSchema]
+});
 ```
 
 ### 3. Rock Concert App
@@ -47,19 +84,96 @@ Write your answer here or in a separate js file.
 This app will be a tool for managing all of your favorite bands' concerts; it will keep track of their tour dates, ticket purchasing, and next recommended show.
 
 ```
-Write your answer here or in a separate js file.
+```
+var TourSchema = new Schema({
+  location   : String,
+  dates     : DateString
+
+  })
+
+var BandSchema = new Schema({
+  bandName   : String,
+  ticketURL  : String,  //href??
+  email      : { type: String, required: true, unique: true },String,
+  touring    : Boolean
+  tourDates  : [TourSchema]
+});
+
+var UserSchema = new Schema({
+  first_name: String,
+  last_name : String,
+  created_at: Date,
+  updated_at: Date,
+  bands     : [BandSchema]
+});
 ```
 
 ### 4. Coffee To-Go App
 
 This app will allow customers to browse a list of coffeeshops nearby, order drinks off of their menu, add those drinks to a shopping cart, and save that cart as a past order once the purchase is complete.
 
+var SizeSchema  = new Schema ({
+  size      : String,
+  price     : Number
+  })
+
+var DrinkSchema = new Schema({
+  drinkName : String,
+  sizes     : [SizeSchema]
+  })
+
+var MenuSchema = new Schema({
+  storeName : String;
+  location  : String,
+  telephone : Number,
+  website   : String
+  drinks    : [DrinkSchema]
+  })
+
+var ShoppingCartSchema = new Schema({
+  totalPrice = number,  ==> sum of forEach orders.sizes.price
+  storeName  = String,  ==> MenuSchema.storeName
+  orders     = [DrinkSchema]
+  dateOfSale = DateString
+  })
+
+var VenueSchema = new Schema({
+  location  : String,
+  venues    : [MenuSchema]
+  })
+
+var UserSchema = new Schema({
+  first_name  : String,
+  last_name   : String,
+  possibleVenues : VenueSchema,
+  salesHistory : [ShoppingCartSchema]
+  })
+
 ### 5. Team Tracker App
 
 This app shows you all the latest stats from your favorite sports teams. You can view individual player stats and full team stats.
 
 ```
-Write your answer here or in a separate js file.
+var PlayerSchema = new Schema({
+  playerName      : String,
+  position        : String,
+  highlights      : [URL String]
+  })
+
+var TeamSchema = new Schema({
+  teamName        : String,
+  teamLocation    : String,
+  teamType        : String,
+  favoritePlayers : [PlayerSchema]
+  })
+
+var UserSchema = new Schema({
+  first_name  : String,
+  last_name   : String,
+  location    : String,
+  teamsLove   : [TeamSchema],
+  teamsHate   : [TeamSchema]
+  })
 ```
 
 
@@ -68,7 +182,7 @@ Write your answer here or in a separate js file.
 Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
 
 ```
-Write your answer here or in a separate js file.
+Personally I started at the "bottom," with a user and worked my up. The connections made sense, I enjoyed using the same schemas in more than one place.
 ```
 
 ### Reading and Videos for Tomorrow
