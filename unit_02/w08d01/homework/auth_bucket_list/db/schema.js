@@ -30,6 +30,7 @@ UserSchema.pre('save', function(next) {
 });
 
 var UserModel = mongoose.model('User', UserSchema);
+var ListModel = mongoose.model('List', ListSchema);
 
 
 //var ListModel model
@@ -37,5 +38,6 @@ var UserModel = mongoose.model('User', UserSchema);
 
 //export List below
 module.exports = {
-  User: UserModel
+  User: UserModel,
+  List: ListModel
 };
