@@ -3,8 +3,10 @@ var Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
 
-//add ListSchema here
-//your code
+var ListSchema = new Schema({
+  name: String,
+  complete: Boolean
+})
 
 var UserSchema = new Schema({
   username: String,
