@@ -74,7 +74,7 @@ router.post('/', function createProjectIdea(req, res){
         in_progress: req.body.in_progress
       }
 
-      user.project_ideas.push(newProjectIdea)
+      user.projectIdeas.push(newProjectIdea)
 
       user.save(function (err) {
         if (err) console.log(err);
