@@ -21,7 +21,6 @@ ProjectIdea.remove({}, function(err){
   console.log(err);
 });
 
-
 // create new users
 var gerry = new User({
   first_name: 'Gerry',

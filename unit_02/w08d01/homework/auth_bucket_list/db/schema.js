@@ -21,6 +21,7 @@ var UserSchema = new Schema({
 //add a ListSchema.pre function (just like UserSchema below)
 //your code
 
+
 UserSchema.pre('save', function(next) {
   now = new Date();
   this.updated_at = now;

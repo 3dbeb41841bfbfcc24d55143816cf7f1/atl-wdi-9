@@ -34,11 +34,9 @@ app.use(session({
 }));
 
 app.use('/users', usersController);
+
 app.use('/sessions', sessionsController);
-app.use('/lists', listsController);
-
-//add the third app.use here (check readme for which route)
-
+app.use('/users/:userId/lists', listsController);
 
 app.listen(4000, function() {
   console.log('hey');
