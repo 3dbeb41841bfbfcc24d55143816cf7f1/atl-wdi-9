@@ -13,7 +13,7 @@ function loginUser(req, res, next) {
   var email = req.body.email;
   var password = req.body.password;
 
-  var query User.findOne({ email: email }).exec()
+  var query = User.findOne({ email: email }).exec()
 
   query.then(function(foundUser){
     if (foundUser == null) {
