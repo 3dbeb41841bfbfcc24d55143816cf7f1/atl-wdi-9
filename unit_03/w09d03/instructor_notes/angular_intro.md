@@ -30,27 +30,27 @@ competencies: Front-end frameworks
 ## Intro - What is AngularJS and Why Should You Learn it? (20 mins)
 
 
-Angular is an open source JS framework maintained by Google. It was created nearly 8 years ago, and its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today and is a valuable job skill to put on your resume. Further, it was built upon jqLite, so it goes hand-in-hand with jQuery!
+Angular is an open source JS framework maintained by Google. It was created nearly 8 years ago, and its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today, and is a valuable job skill to put on your resume. Further, it was built upon jqLite, so it goes hand-in-hand with jQuery!
 
 AngularJS provides the following benefits when used to develop web apps:
 
-- Enables us to organize and structure Single Page Apps using the popular MVC design pattern
-- Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer
-- Was designed with testing in mind
+- Enables us to organize and structure Single Page Apps using the popular MVC design pattern.
+- Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer.
+- Was designed with testing in mind.
 
-#### The Components of AngularJS
+### The Components of AngularJS
 
 ![angular_components](https://cloud.githubusercontent.com/assets/25366/8970275/a1ab2ee2-35fd-11e5-8b23-65f4159ff7d6.jpg)
 
-#### Modules
+### Modules
 
-Modules are containers for related code.  The concept of *modules* is prevalent throughout programming, and here, we can consider it essentially a container for our app.
+Modules are where we write the pieces of our app, containers for related code.  The concept of *modules* is prevalent throughout programming, and here, we can consider it essentially a container for our app.
 
-#### Config & Routes
+### Config & Routes
 
 Each AngularJS module has a *config* method that allows us to provide code that runs when a module is loaded.  The *config* method is used most commonly to setup routing.
 
-#### Controller
+### Controller
 
 Controllers in AngularJS serve two primary purposes:
 
@@ -59,18 +59,18 @@ Controllers in AngularJS serve two primary purposes:
 
 A controller is a JS constructor function that is instantiated by the _ng-controller_ directive.
 
-#### Services & Factories
+### Services & Factories
 
 Services provide a way to organize related code and data that can be shared by controllers and even other services. Unlike controllers, which are instantiated and destroyed as the views they are attached to come into and out of view, services are created once (singletons) and persist for the life of the application.
 
 Services should be used to hold the bulk of your application's logic and data, thus keeping controllers focused on what they are responsible for. Often, you can consider a service or factory something like a model or class.
 
-#### Directives
+### Directives
 
 Directives are "markers" in HTML - most commonly as attributes and custom element tags. When processed by AngularJS's HTML compiler, they attach behavior to DOM elements or even transform them and/or their children.
 
 
-#### Filters
+### Filters
 
 Filters are used to transform data. They are very flexible and can be used for formatting text in a view, such as making it all uppercase, or used to filter and sort an array of items.
 
@@ -102,20 +102,20 @@ Create a example Node/Express app for this lesson.
 2. `npm init -y`
 4. `touch server.js`
 
-    ```js
-    // server.js
-    var express = require('express');
-    var app     = express();
+```js
+// server.js
+var express = require('express');
+var app     = express();
 
-    app.use(express.static('public'));
+app.use(express.static('public'));
 
-    app.get('/', function(req, res){
-        res.render('index');
-    });
+app.get('/', function(req, res){
+    res.render('index');
+});
 
-    app.listen(4000, function(){
-        console.log("app listening on port 4000");
-    });
+app.listen(4000, function(){
+    console.log("app listening on port 4000");
+});
 ```
     
 1. `npm install --save express`
@@ -124,25 +124,23 @@ Create a example Node/Express app for this lesson.
 1. `touch public/js/app.js`
 1. `touch public/index.html`
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>Intro to Angular</title>
-      </head>
-      <body>
-    
-      </body>
-    </html>
-    ```
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Angular</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
     
 1. Your folder structure should look similar to this.
 
-    ![](https://i.imgur.com/ncMjQme.png)
+![](https://i.imgur.com/ncMjQme.png)
     
-
-
 ##### &#x1F535; YOU DO
 
 Repeat the steps above to set-up our Angular app.
@@ -156,11 +154,11 @@ Like a few frameworks we've seen, there's no particular way to organize your app
 First, let's get Angular from [Google's CDN](https://developers.google.com/speed/libraries/#angularjs) and paste into script tag in the ```<head>```.
 
 ```html
- <head>
-   <meta charset="utf-8">
-   <title>Intro to Angular</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
- </head>
+<head>
+  <meta charset="utf-8">
+  <title>Intro to Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+</head>
 ```
 
 
