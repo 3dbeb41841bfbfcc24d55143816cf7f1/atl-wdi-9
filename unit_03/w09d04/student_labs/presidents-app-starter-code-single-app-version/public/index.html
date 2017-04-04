@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="ThePresidentsApp">
-  <head>
+  <hea
     <meta charset="utf-8">
     <title>The Presidents App</title>
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,9 @@
 
       <ul id="presidents">
         <li ng-repeat="president in presidents.all">
-          <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em>
+          <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em> 
+          <button type = "button" value = "delete" ng-click="presidents.removePresident(president)"><span ng-style="{color:'red'}"> X </span>
+          </button>
         </li>
       </ul>
 
