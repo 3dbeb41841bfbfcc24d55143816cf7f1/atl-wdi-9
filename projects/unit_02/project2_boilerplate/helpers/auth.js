@@ -12,8 +12,8 @@ function loginUser(req, res, next) {
   // YOU MIGHT CHANGE EMAIL TO USERNAME IF YOU DON'T WANT TO STORE EMAILS
   var email = req.body.email;
   var password = req.body.password;
-
-  var query = User.findOne({ email: email }).exec();
+  
+  var query = User.findOne({ email: email }).exec()
 
   query.then(function(foundUser){
     if (foundUser == null) {
