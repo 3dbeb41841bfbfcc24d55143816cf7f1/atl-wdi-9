@@ -1,5 +1,5 @@
 angular
-  .module('ThePresiden
+  .module('ThePresidentsApp')
   .controller('PresidentsController', PresidentsController);
 
 PresidentsController.$inject = ['$http'];
