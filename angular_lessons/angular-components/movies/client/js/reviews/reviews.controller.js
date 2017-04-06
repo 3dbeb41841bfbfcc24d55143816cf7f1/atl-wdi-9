@@ -1,7 +1,3 @@
-angular
-    .module('moviesApp')
-    .controller('ReviewsController', ReviewsController);
-
 function ReviewsController() {
     this.reviewList = [
         {content: 'It was good.'},
@@ -9,3 +5,4 @@ function ReviewsController() {
         {content: 'Did not like it.'},
     ]
 }
+module.exports = ReviewsController;

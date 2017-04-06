@@ -21,7 +21,7 @@ function CriminalsController(CriminalsService){
   function getCriminals(){
 <<<<<<< HEAD
     CriminalServices.getCriminals()
-      .then(function(criminalsData){
+      .then(function(criminalsData){  //tthe data is returned as an array of data through the promise '.then'
         self.all = criminalsData;
     });
   }
