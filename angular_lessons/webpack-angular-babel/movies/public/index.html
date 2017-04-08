@@ -5,7 +5,8 @@
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/controllers/moviesController.js"></script>
+    <script src="js/moviesController.js"></script>
+    <script src="js/reviewsController.js"></script>
 </head>
 <body>
 
@@ -15,6 +16,11 @@
             <div>Title: {{movie.title}}</div>
             <div>Year: {{movie.year}}</div>
             <br>
+            <div ng-controller="ReviewsController as reviews">
+            <h3>Reviews:</h3>
+            <ul>
+                <li ng-repeat="review in reviews.reviewList">{{review.content}}</li>
+            </ul>
         </div>
     </div>
 
