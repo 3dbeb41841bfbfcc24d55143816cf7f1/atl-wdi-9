@@ -2,15 +2,15 @@
 -- Unless otherwise stated, all queries should return all columns
 
 -- Get all information about all authors
-
+SELECT * FROM authors;
 -- Get just the name and birth year of all authors
-
+SELECT name, birth_year FROM authors;
 -- Get all authors born in the 20th centruy or later
-
+SELECT * FROM authors WHERE birth_year > 1900;
 -- Get all authors born in the USA
-
+SELECT name FROM authors WHERE nationality LIKE '%United States%';
 -- Get all books published on 1985
-
+SELECT titles FROM books WHERE publication_year = 1985;
 -- Get all books published before 1989
 
 -- Get just the title of all books.
