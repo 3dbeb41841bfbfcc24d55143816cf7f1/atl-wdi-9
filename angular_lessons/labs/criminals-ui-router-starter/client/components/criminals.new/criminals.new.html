@@ -1,6 +1,19 @@
 <div>
+<<<<<<< HEAD
 	Name: {{ $ctrl.current.name }}
 	<br />
 	Crime: {{ $ctrl.current.crime }}
 </div>
 	
+=======
+	<form ng-submit="$ctrl.createCriminal()">
+		<label for="name">Name:</label>
+		<input id="name" type="text" ng-model="$ctrl.newCriminal.name" />
+
+		<label for="name">Crime:</label>
+		<input id="crime" type="text" ng-model="$ctrl.newCriminal.crime" />
+
+		<button type="submit">Create</button>
+	</form>
+</div>
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
