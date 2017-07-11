@@ -25,31 +25,67 @@ window.onload = function() {
   var ring3 = document.querySelector('.ring-3');
 
   body.addEventListener('click', bullseyeGame.miss);
-  ring1.addEventListener('click', bullseyeGame.outerRing)
+  ring1.addEventListener('click', bullseyeGame.outerRing);
+  ring2.addEventListener('click', bullseyeGame.middleRing);
+  ring3.addEventListener('click', bullseyeGame.bullseye);
 }
 
 
-var bullseyeGame = {
+var bullseyeGame = {  //bullseyeGame if an object made of score, updateScore, miss, bulleye, etc...
   score: 0,
 
   updateScore: function(points) {
     var scoreElement = document.querySelector('.score');
-    this.score += points
-
-    scoreElement.innerHTML = `${this.score} points`
+    this.score += points;  //what is this doing in here?
+    scoreElement.innerHTML = `${this.score} points`;
   },
 
   miss: function(event) {
     event.stopPropagation();
-    alert('YOU MISSED');
-
-    bullseyeGame.updateScore(0);
+    
+    setTimeout(function() {
+      bullseyeGame.updateScore(0); //is this necesssary?
+      //alert('YOU MISSED');
+      document.body.style.backgroundColor = 'white';
     // [ALERT:] needs to be bullseyeGame because this in clickEvents refers to the html
     // element that was clicked
+    },2000)
+    document.body.style.backgroundColor = 'yellow';
+  },
+
+  bullseye: function(event) {
+    event.stopPropagation();  //???
+    var bullseye = this;  //powerful line makes bullseye = "this" element, makaing it easy to reference the color change
+    
+    setTimeout(function() {
+      bullseyeGame.updateScore(100);
+      //alert('bullseye was clicked');
+      bullseye.style.backgroundColor = 'blue';
+    },2000)
+    bullseye.style.backgroundColor = 'yellow';
+  },
+
+  middleRing: function(event) {
+    event.stopPropagation();
+    var middleRing = this;
+
+    setTimeout(function() {
+      bullseyeGame.updateScore(50);
+      //alert('middleRing was clicked');
+      middleRing.style.backgroundColor = 'green';
+    }, 2000)
+    middleRing.style.backgroundColor = 'yellow';
   },
 
   outerRing: function(event) {
     event.stopPropagation();
-    alert('outerRing was clicked')
+    var outerRing = this;
+
+    setTimeout(function() {
+      bullseyeGame.updateScore(10);
+      //alert('outerRing was clicked');
+      outerRing.style.backgroundColor = 'red';  //I tried using "this" instead of outerRing: it did not work!!!
+    }, 2000)
+    this.style.backgroundColor = 'yellow';
   }
 }

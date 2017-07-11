@@ -79,7 +79,7 @@ span.status.alive {
 form#newCriminal {
   border: 2px solid black;
   border-radius: 4px;
-  padding: 1.8rem 1rem 0.618rem;
+  padding: 1.8rem 2rem 0.618rem;
   max-width: 300px;
   margin-top: 2.4rem;
 }
@@ -135,3 +135,23 @@ form#newCriminal input[type=submit]:focus {
   box-shadow: none;
   outline: none;
 }
+
+.repeated-item.ng-enter, .repeated-item.ng-move {
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+
+.repeated-item.ng-enter.ng-enter-active,
+.repeated-item.ng-move.ng-move-active {
+  opacity: 1;
+}
+
+.repeated-item.ng-leave {
+  animation: 0.5s my_animation;
+}
+
+@keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+

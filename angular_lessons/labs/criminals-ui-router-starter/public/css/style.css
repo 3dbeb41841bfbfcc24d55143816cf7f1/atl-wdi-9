@@ -22,7 +22,7 @@ h1 {
 }
 
 h1:after {
-  content: "™";
+  content: "DOM";
   font-size: 1.4rem;
   vertical-align: super;
   position: relative;

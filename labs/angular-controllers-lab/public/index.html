@@ -5,9 +5,41 @@
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/todosController.js"></script>
+    <script src="js/productsController.js"></script>
+    <style>
+    .hidden {
+      display: none;
+    }
+    </style>
   </head>
   <body>
-    {{'I ' + 'am ' + 'a ' + 'working ' + 'Angular.js ' + 'app!' }}
+    <div ng-controller="ProductsController as productsCtrl">
+
+      <!-- <pre>{{ productsCtrl | json }}</pre> -->
+
+      <form id="product-id" ng-submit="productsCtrl.add()">
+        <input type="text" placeholder="name" ng-model="productsCtrl.newStuff.name">
+        <input type="number" placeholder="price" ng-model="productsCtrl.newStuff.price">
+        <input type="date" placeholder="" ng-model="productsCtrl.newStuff.dateAdded">
+        <input type="submit" value="Submit">
+      </form>
+      <div ng-controller="ReviewsController as reviewsCtrl">
+
+        <input type="text" placeholder"type in a name to search by..." ng-model="search">
+        <ul ng-repeat="product in productsCtrl.all | filter:search" >
+          <li>Product Name: {{ product.name }} | Price {{ product.price | currency }}
+            | Date Added {{ product.dateAdded | date }} </li>
+        </ul>
+
+        <ul ng-class="{'hidden': !productsCtrl.toggle}" ng-repeat="category in reviewsCtrl.productCategories">
+          <li>{{ category }}</li>
+        </ul>
+        <button ng-show="!productsCtrl.toggle" ng-click="productsCtrl.toggle = true">Show categories</button>
+        <button ng-show="productsCtrl.toggle" ng-click="productsCtrl.toggle = false">Hide categories</button>
+           <span>
+              Displaying {{ productsCtrl.all.length }} products across {{ reviewsCtrl.productCategories.length }} categories.
+           </span>
+      </div>
+    </div>
   </body>
 </html>

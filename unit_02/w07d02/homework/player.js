@@ -14,4 +14,30 @@ var player = {
     tamagotchi.restedness++;
     console.log(tamagotchi.name + ' got some Zzzzs! Restedness: ' + tamagotchi.restedness);
   }
-}; //end player
+};
+
+
+//click events
+
+$(function() {
+  $("#feed1").on('click', () => {
+    player.feedTamagotchi(x);
+  })
+  $("#feed2").on('click', () => {
+    player.feedTamagotchi(y);
+  })
+  $("#rest1").on('click', () => {
+    player.knockOutTamagotchi(x);
+  })
+  $("#rest2").on('click', () => {
+    player.knockOutTamagotchi(y);
+  })
+  $("#health1").on('click', () => {
+    player.medicateTamagotchi(x);
+  })
+  $("#health2").on('click', () => {
+    player.medicateTamagotchi(y);
+  })
+});
+
+//end player

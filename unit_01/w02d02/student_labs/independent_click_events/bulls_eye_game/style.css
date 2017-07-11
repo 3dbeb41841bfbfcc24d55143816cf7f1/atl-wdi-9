@@ -17,13 +17,13 @@ body {
 }
 
 .ring-2 {
-  background-color: white;
+  background-color: green;
   width: 100pt;
   height: 100pt;
 }
 
 .ring-3 {
-  background-color: red;
+  background-color: blue;
   width: 50pt;
   height: 50pt;
 }

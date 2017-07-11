@@ -52,11 +52,11 @@ var bullseyeGame = {
       bullseyeGame.updateScore(0);
       // [ALERT:] needs to be bullseyeGame because this in clickEvents refers to the html
       // element that was clicked
-      document.body.style.backgroundColor = 'white'
+      document.body.style.backgroundColor = 'white';
       alert('YOU MISSED');
     }, 500) // the function passed to set timeout executes half a second late (500ms)
 
-/*3.*/ document.body.style.backgroundColor = 'yellow'
+/*3.*/ document.body.style.backgroundColor = 'yellow';
   },
   /*
   1. event.stopPropagation is invoked

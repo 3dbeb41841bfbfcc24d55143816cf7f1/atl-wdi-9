@@ -3,7 +3,7 @@ router = express.Router();
 var User = require('../models/user.js');
 var authHelpers = require('../helpers/auth.js');
 
-router.get('/', function(req, res) {
+router.get('/',function(req, res) {
   User.find({})
   .exec(function(err, users){
     if (err) { console.log(err); }
@@ -29,7 +29,7 @@ router.post('/signup', function(req, res){
   });
 });
 
-router.get('/:id', function(req, res) {
+router.get('/:id', authHelpers.authorize, function(req, res) {
   User.findById(req.params.id)
   .exec(function(err, user) {
     if (err) console.log(err);

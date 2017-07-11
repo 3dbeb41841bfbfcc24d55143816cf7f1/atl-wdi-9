@@ -1,0 +1,38 @@
+<h1>Change me!</h1>
+
+<form action="/pokemon/{{pokemonNum}}?_method=PUT" method="POST"> 
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{pokemon.name}}">
+  </div>
+  <div>
+    <label for="type">Type:</label>
+    <input type="text" name="type" value="{{pokemon.type}}">
+  </div>
+  <div>
+    <p>Stats:</p>
+    <label for="hp">HP:</label>
+    <input type="text" name="hp" value="{{pokemon.stats.hp}}">
+  </div>
+  <div>
+    <label for="attack">Type:Attack</label>
+    <input type="text" name="attack" value="{{pokemon.stats.attack}}">
+  </div>
+  <div>
+    <label for="defense">Defense:</label>
+    <input type="text" name="defense" value="{{pokemon.stats.defense}}">
+  </div>
+  <div>
+    <label for="spattack">Type:Special Attack</label>
+    <input type="text" name="spattack" value="{{pokemon.stats.spattack}}">
+  </div>
+  <div>
+    <label for="spdefense">Special Defense:</label>
+    <input type="text" name="spdefense" value="{{pokemon.stats.spdefense}}">
+  </div>
+  <div>
+    <label for="speed">Speed:</label>
+    <input type="text" name="speed" value="{{pokemon.stats.speed}}">
+  </div>
+  <input type="submit" name="" value="Submit Changes">
+</form>

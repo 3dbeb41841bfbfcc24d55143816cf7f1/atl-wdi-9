@@ -1,1 +1,1 @@
-angular.module('InfamousCriminals', []);
+angular.module('InfamousCriminals', ['ngMessages', 'ngAnimate']);

@@ -3,8 +3,10 @@ var Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
 
-//add ListSchema here
-//your code
+var ListSchema = new Schema({
+  name: String,
+  complete: Boolean
+})
 
 var UserSchema = new Schema({
   username: String,
@@ -19,6 +21,7 @@ var UserSchema = new Schema({
 //add a ListSchema.pre function (just like UserSchema below)
 //your code
 
+
 UserSchema.pre('save', function(next) {
   now = new Date();
   this.updated_at = now;
@@ -28,6 +31,7 @@ UserSchema.pre('save', function(next) {
 });
 
 var UserModel = mongoose.model('User', UserSchema);
+var ListModel = mongoose.model('List', ListSchema);
 
 
 //var ListModel model
@@ -35,5 +39,6 @@ var UserModel = mongoose.model('User', UserSchema);
 
 //export List below
 module.exports = {
-  User: UserModel
+  User: UserModel,
+  List: ListModel
 };

@@ -1,9 +1,8 @@
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcrypt'); //possibly switch back to bcrypt
 var User = require('../models/user.js');
 
 function createSecure(req, res, next) {
   var password = req.body.password;
-
   res.hashedPassword = bcrypt.hashSync(password, bcrypt.genSaltSync(10));
   next();
 }
@@ -30,9 +29,20 @@ function loginUser(req, res, next) {
 //create a function called "authorized" that checks if the CurrentUser's id matches the id in params
 //your code here
 
+function authorized(req, res, next) {
+  var currentUser = req.session.currentUser;
+//might need to change
+  if (!currentUser || currentUser._id !== req.params.id) {
+    res.send({status :404})
+  } else {
+    next()
+  }
+};
+
 //Export this function below:
 
 module.exports = {
   createSecure: createSecure,
-  loginUser: loginUser
+  loginUser: loginUser,
+  authorized: authorized
 };

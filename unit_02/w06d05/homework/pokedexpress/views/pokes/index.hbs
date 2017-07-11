@@ -1,0 +1,10 @@
+<h1>{{pokemon.length}} Pokemon Characters Showing</h1>
+<a href="/pokemon/new">Maybe you would like to make a pokemon too?</a> <br>
+<ul>
+  {{#each pokemon}}
+    <li>
+      <a href="/pokemon/{{@index}}">{{name}}</a>
+      <img src = "{{img}}" alt="n/a" style="width:25px;height:25px;">
+    </li>
+  {{/each}}
+</ol>

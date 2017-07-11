@@ -3,10 +3,7 @@
 // Barrels O' RUM
 
 var barrels = function(small, large, total){
-  var smallBarrel = 60;
-  var largeBarrel = (total - (small * smallBarrel)) / large;
-
-return largeBarrel;
+  return (total - small * 60) / large; 	
 };
 
 //*************************
@@ -14,7 +11,8 @@ return largeBarrel;
 // Sailing the Seas
 
 var shipFuelCost = function(fuelPrice, milesPerGallon){
-  //your code here
+   const circumference = 24901;
+   return (circumference / milesPerGallon * fuelPrice);
 };
 
 //*************************
@@ -22,7 +20,9 @@ var shipFuelCost = function(fuelPrice, milesPerGallon){
 // GROG
 
 var calcFruitJuice = function(a, b, c, d){
-  //your code here
+  var total_juice = a + c;
+  var total_pure_juice = a * b / 100 + c * d / 100;
+  return total_pure_juice / total_juice;
 };
 
 //DO NOT EDIT BELOW THIS LINE//
