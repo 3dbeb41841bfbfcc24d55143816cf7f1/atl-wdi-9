@@ -1,1 +1,3 @@
-angular.module('storeApp', []);
+angular
+.module('storeApp', []);
+.controller("ProductsController", ProductsController);

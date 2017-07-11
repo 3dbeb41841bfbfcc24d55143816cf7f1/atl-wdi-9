@@ -66,8 +66,17 @@
 <<<<<<< HEAD
 /******/ 	return __webpack_require__(__webpack_require__.s = 14);
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+=======
 /******/ 	return __webpack_require__(__webpack_require__.s = 20);
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -75,6 +84,11 @@
 /***/ (function(module, exports) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 CriminalsShowController.$inject = ['CriminalsService', '$stateParams'];
 function CriminalsShowController(CriminalsService, $stateParams) {
   var vm = this;
@@ -131,6 +145,10 @@ module.exports = CriminalsNewController;
 /* 2 */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 CriminalsShowController.$inject = ['$stateParams', 'CriminalsService'];
 
 function CriminalsShowController($stateParams, CriminalsService) {
@@ -141,17 +159,37 @@ function CriminalsShowController($stateParams, CriminalsService) {
 	activate();
 
 	function activate() {
+<<<<<<< HEAD
+<<<<<<< HEAD
+		loadCurrentCriminals();
+	}
+
+	function loadCurrentCriminals() {
+=======
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 		loadCurrentCriminal();
 	}
 
 	function loadCurrentCriminal() {
 		console.log($stateParams);
 
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 		CriminalsService.loadCurrent($stateParams.criminalId).then(function resolve(response) {
 			vm.current = response.data.criminal;
 		});
 	}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 }
 
 module.exports = CriminalsShowController;
@@ -160,8 +198,17 @@ module.exports = CriminalsShowController;
 <<<<<<< HEAD
 /* 1 */
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* 1 */
+=======
 /* 3 */
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+/* 3 */
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /***/ (function(module, exports) {
 
 CriminalsController.$inject = ['CriminalsService'];
@@ -184,11 +231,21 @@ function CriminalsController(CriminalsService) {
 	function loadAllCriminals() {
 		CriminalsService.loadAll().then(function resolve(response) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+			vm.criminals = response.data.criminals;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 			console.log(response);
 			vm.criminals = response.data.criminals; // array of criminals
 =======
 			vm.criminals = response.data.criminals;
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 			vm.loading = false;
 		});
 	}
@@ -199,6 +256,25 @@ module.exports = CriminalsController;
 /***/ }),
 <<<<<<< HEAD
 /* 2 */
+<<<<<<< HEAD
+/***/ (function(module, exports, __webpack_require__) {
+
+const controller = __webpack_require__(2);
+const template = __webpack_require__(13);
+
+const component = {
+	controller: controller,
+	template: template
+};
+
+angular.module('criminals').component('home', component);
+
+/***/ }),
+=======
+<<<<<<< HEAD
+/* 2 */
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 =======
 /* 4 */
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
@@ -224,11 +300,20 @@ module.exports = HomeController;
 
 /***/ }),
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const angular = __webpack_require__(10);
 __webpack_require__(8);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 =======
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -236,12 +321,32 @@ __webpack_require__(8);
 const angular = __webpack_require__(14);
 __webpack_require__(12);
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
 angular.module('criminals', ['ui.router']).config(uiRouterSetup);
 
 uiRouterSetup.$inject = ['$stateProvider', '$urlRouterProvider'];
 function uiRouterSetup($stateProvider, $urlRouterProvider) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+	$stateProvider.state('home', {
+		url: '/',
+		//template: '<home></home>'
+		template: '<home></home>'
+	}).state('about', {
+		url: '/about',
+		template: '<about></about>'
+	}).state('criminals', {
+		url: '/criminals',
+		template: '<criminals></criminals>'
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
   $stateProvider.state('home', {
     url: '/',
     template: '<home></home>'
@@ -290,6 +395,10 @@ const template = __webpack_require__(12);
 	}).state('criminals', {
 		url: '/criminals',
 		template: '<criminals></criminals>'
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 	}).state('criminalsNew', {
 		url: '/criminals/new',
 		template: '<criminals-new></criminals-new>'
@@ -302,17 +411,46 @@ const template = __webpack_require__(12);
 }
 
 /***/ }),
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const controller = __webpack_require__(0);
+const template = __webpack_require__(11);
+=======
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const controller = __webpack_require__(0);
 const template = __webpack_require__(15);
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
 const component = {
 	controller: controller,
 	template: template
 };
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+angular.module('criminals').component('criminalsShow', component);
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const controller = __webpack_require__(1);
+const template = __webpack_require__(12);
+
+const CriminalsComponent = {
+=======
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 angular.module('criminals').component('about', component);
 
 /***/ }),
@@ -324,11 +462,36 @@ const template = __webpack_require__(16);
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
 
 const component = {
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 	controller: controller,
 	template: template
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+angular.module('criminals').component('criminals', CriminalsComponent);
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+HomeController.$inject = [];
+
+function HomeController() {
+	const vm = this;
+}
+
+module.exports = HomeController;
+
+/***/ }),
+/* 7 */
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 angular.module('criminals').component('criminals', component);
 
 /***/ }),
@@ -395,6 +558,10 @@ angular.module('criminals').component('home', component);
 =======
 /* 11 */
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /***/ (function(module, exports) {
 
 angular.module('criminals').service('CriminalsService', CriminalsService);
@@ -407,19 +574,36 @@ function CriminalsService($http) {
 	// WHAT THIS SERVICE DOES / HAS AVAILABLE TO CALL
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 	self.create = create;
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+	self.create = create;
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 	self.loadAll = loadAll;
 	self.loadCurrent = loadCurrent;
 
 	// HOW IT DOES STUFF
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 	function create(criminalData) {
 		return $http.post('/api/criminals', criminalData);
 	}
 
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 	function loadAll() {
 		return $http.get('/api/criminals');
 	}
@@ -433,8 +617,17 @@ function CriminalsService($http) {
 <<<<<<< HEAD
 /* 8 */
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* 8 */
+=======
 /* 12 */
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+/* 12 */
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /***/ (function(module, exports) {
 
 /**
@@ -3842,6 +4035,11 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         copy($state.params, $stateParams);
         $state.transition = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
         if (options.location && to.navigable) {
           $urlRouter.push(to.navigable.url, to.navigable.locals.globals.$stateParams, {
@@ -3858,6 +4056,10 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
          * @description
          * Fired once the state transition is **complete**.
 =======
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
         if (options.location && to.navigable) {
           $urlRouter.push(to.navigable.url, to.navigable.locals.globals.$stateParams, {
@@ -3883,6 +4085,691 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
           $rootScope.$broadcast('$stateChangeSuccess', to.self, toParams, from.self, fromParams);
         }
         $urlRouter.update(true);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+        return $state.current;
+      }).then(null, function (error) {
+        // propagate TransitionSuperseded error without emitting $stateChangeCancel
+        // as it was already emitted in the success handler above
+        if (error === TransitionSupersededError) return TransitionSuperseded;
+
+        if ($state.transition !== transition) {
+          $rootScope.$broadcast('$stateChangeCancel', to.self, toParams, from.self, fromParams);
+          return TransitionSuperseded;
+        }
+
+        $state.transition = null;
+        /**
+         * @ngdoc event
+         * @name ui.router.state.$state#$stateChangeError
+         * @eventOf ui.router.state.$state
+         * @eventType broadcast on root scope
+         * @description
+         * Fired when an **error occurs** during transition. It's important to note that if you
+         * have any errors in your resolve functions (javascript errors, non-existent services, etc)
+         * they will not throw traditionally. You must listen for this $stateChangeError event to
+         * catch **ALL** errors.
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+         *
+         * @param {Object} event Event object.
+         * @param {State} toState The state being transitioned to.
+         * @param {Object} toParams The params supplied to the `toState`.
+         * @param {State} fromState The current state, pre-transition.
+         * @param {Object} fromParams The params supplied to the `fromState`.
+<<<<<<< HEAD
+         */
+          $rootScope.$broadcast('$stateChangeSuccess', to.self, toParams, from.self, fromParams);
+        }
+        $urlRouter.update(true);
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
+
+        return $state.current;
+      }).then(null, function (error) {
+        // propagate TransitionSuperseded error without emitting $stateChangeCancel
+        // as it was already emitted in the success handler above
+        if (error === TransitionSupersededError) return TransitionSuperseded;
+
+        if ($state.transition !== transition) {
+          $rootScope.$broadcast('$stateChangeCancel', to.self, toParams, from.self, fromParams);
+          return TransitionSuperseded;
+        }
+
+        $state.transition = null;
+        /**
+         * @ngdoc event
+         * @name ui.router.state.$state#$stateChangeError
+         * @eventOf ui.router.state.$state
+         * @eventType broadcast on root scope
+         * @description
+         * Fired when an **error occurs** during transition. It's important to note that if you
+         * have any errors in your resolve functions (javascript errors, non-existent services, etc)
+         * they will not throw traditionally. You must listen for this $stateChangeError event to
+         * catch **ALL** errors.
+         *
+         * @param {Object} event Event object.
+         * @param {State} toState The state being transitioned to.
+         * @param {Object} toParams The params supplied to the `toState`.
+         * @param {State} fromState The current state, pre-transition.
+         * @param {Object} fromParams The params supplied to the `fromState`.
+         * @param {Error} error The resolve error object.
+         */
+        evt = $rootScope.$broadcast('$stateChangeError', to.self, toParams, from.self, fromParams, error);
+
+        if (!evt.defaultPrevented) {
+          $urlRouter.update();
+        }
+
+<<<<<<< HEAD
+=======
+=======
+         * @param {Error} error The resolve error object.
+         */
+        evt = $rootScope.$broadcast('$stateChangeError', to.self, toParams, from.self, fromParams, error);
+
+        if (!evt.defaultPrevented) {
+          $urlRouter.update();
+        }
+
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
+        return $q.reject(error);
+      });
+
+      silenceUncaughtInPromise(transition);
+      return transition;
+    };
+
+    /**
+     * @ngdoc function
+     * @name ui.router.state.$state#is
+     * @methodOf ui.router.state.$state
+     *
+     * @description
+     * Similar to {@link ui.router.state.$state#methods_includes $state.includes},
+     * but only checks for the full state name. If params is supplied then it will be
+     * tested for strict equality against the current active params object, so all params
+     * must match with none missing and no extras.
+     *
+     * @example
+     * <pre>
+     * $state.$current.name = 'contacts.details.item';
+     *
+     * // absolute name
+     * $state.is('contact.details.item'); // returns true
+     * $state.is(contactDetailItemStateObject); // returns true
+     *
+     * // relative name (. and ^), typically from a template
+     * // E.g. from the 'contacts.details' template
+     * <div ng-class="{highlighted: $state.is('.item')}">Item</div>
+     * </pre>
+     *
+     * @param {string|object} stateOrName The state name (absolute or relative) or state object you'd like to check.
+     * @param {object=} params A param object, e.g. `{sectionId: section.id}`, that you'd like
+     * to test against the current active state.
+     * @param {object=} options An options object.  The options are:
+     *
+     * - **`relative`** - {string|object} -  If `stateOrName` is a relative state name and `options.relative` is set, .is will
+     * test relative to `options.relative` state (or name).
+     *
+     * @returns {boolean} Returns true if it is the state.
+     */
+    $state.is = function is(stateOrName, params, options) {
+      options = extend({ relative: $state.$current }, options || {});
+      var state = findState(stateOrName, options.relative);
+
+      if (!isDefined(state)) { return undefined; }
+      if ($state.$current !== state) { return false; }
+
+      return !params || objectKeys(params).reduce(function(acc, key) {
+        var paramDef = state.params[key];
+        return acc && !paramDef || paramDef.type.equals($stateParams[key], params[key]);
+      }, true);
+    };
+
+    /**
+     * @ngdoc function
+     * @name ui.router.state.$state#includes
+     * @methodOf ui.router.state.$state
+     *
+     * @description
+     * A method to determine if the current active state is equal to or is the child of the
+     * state stateName. If any params are passed then they will be tested for a match as well.
+     * Not all the parameters need to be passed, just the ones you'd like to test for equality.
+     *
+     * @example
+     * Partial and relative names
+     * <pre>
+     * $state.$current.name = 'contacts.details.item';
+     *
+     * // Using partial names
+     * $state.includes("contacts"); // returns true
+     * $state.includes("contacts.details"); // returns true
+     * $state.includes("contacts.details.item"); // returns true
+     * $state.includes("contacts.list"); // returns false
+     * $state.includes("about"); // returns false
+     *
+     * // Using relative names (. and ^), typically from a template
+     * // E.g. from the 'contacts.details' template
+     * <div ng-class="{highlighted: $state.includes('.item')}">Item</div>
+     * </pre>
+     *
+     * Basic globbing patterns
+     * <pre>
+     * $state.$current.name = 'contacts.details.item.url';
+     *
+     * $state.includes("*.details.*.*"); // returns true
+     * $state.includes("*.details.**"); // returns true
+     * $state.includes("**.item.**"); // returns true
+     * $state.includes("*.details.item.url"); // returns true
+     * $state.includes("*.details.*.url"); // returns true
+     * $state.includes("*.details.*"); // returns false
+     * $state.includes("item.**"); // returns false
+     * </pre>
+     *
+     * @param {string} stateOrName A partial name, relative name, or glob pattern
+     * to be searched for within the current state name.
+     * @param {object=} params A param object, e.g. `{sectionId: section.id}`,
+     * that you'd like to test against the current active state.
+     * @param {object=} options An options object.  The options are:
+     *
+     * - **`relative`** - {string|object=} -  If `stateOrName` is a relative state reference and `options.relative` is set,
+     * .includes will test relative to `options.relative` state (or name).
+     *
+     * @returns {boolean} Returns true if it does include the state
+     */
+    $state.includes = function includes(stateOrName, params, options) {
+      options = extend({ relative: $state.$current }, options || {});
+      if (isString(stateOrName) && isGlob(stateOrName)) {
+        if (!doesStateMatchGlob(stateOrName)) {
+          return false;
+        }
+        stateOrName = $state.$current.name;
+      }
+
+      var state = findState(stateOrName, options.relative);
+      if (!isDefined(state)) { return undefined; }
+      if (!isDefined($state.$current.includes[state.name])) { return false; }
+      if (!params) { return true; }
+
+      var keys = objectKeys(params);
+      for (var i = 0; i < keys.length; i++) {
+        var key = keys[i], paramDef = state.params[key];
+        if (paramDef && !paramDef.type.equals($stateParams[key], params[key])) {
+          return false;
+        }
+      }
+
+      return objectKeys(params).reduce(function(acc, key) {
+        var paramDef = state.params[key];
+        return acc && !paramDef || paramDef.type.equals($stateParams[key], params[key]);
+      }, true);
+    };
+
+
+    /**
+     * @ngdoc function
+     * @name ui.router.state.$state#href
+     * @methodOf ui.router.state.$state
+     *
+     * @description
+     * A url generation method that returns the compiled url for the given state populated with the given params.
+     *
+     * @example
+     * <pre>
+     * expect($state.href("about.person", { person: "bob" })).toEqual("/about/bob");
+     * </pre>
+     *
+     * @param {string|object} stateOrName The state name or state object you'd like to generate a url from.
+     * @param {object=} params An object of parameter values to fill the state's required parameters.
+     * @param {object=} options Options object. The options are:
+     *
+     * - **`lossy`** - {boolean=true} -  If true, and if there is no url associated with the state provided in the
+     *    first parameter, then the constructed href url will be built from the first navigable ancestor (aka
+     *    ancestor with a valid url).
+     * - **`inherit`** - {boolean=true}, If `true` will inherit url parameters from current url.
+     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g '^'), 
+     *    defines which state to be relative from.
+     * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
+     * 
+     * @returns {string} compiled state url
+     */
+    $state.href = function href(stateOrName, params, options) {
+      options = extend({
+        lossy:    true,
+        inherit:  true,
+        absolute: false,
+        relative: $state.$current
+      }, options || {});
+
+      var state = findState(stateOrName, options.relative);
+
+      if (!isDefined(state)) return null;
+      if (options.inherit) params = inheritParams($stateParams, params || {}, $state.$current, state);
+      
+      var nav = (state && options.lossy) ? state.navigable : state;
+
+      if (!nav || nav.url === undefined || nav.url === null) {
+        return null;
+      }
+      return $urlRouter.href(nav.url, filterByKeys(state.params.$$keys().concat('#'), params || {}), {
+        absolute: options.absolute
+      });
+    };
+
+    /**
+     * @ngdoc function
+     * @name ui.router.state.$state#get
+     * @methodOf ui.router.state.$state
+     *
+     * @description
+     * Returns the state configuration object for any specific state or all states.
+     *
+     * @param {string|object=} stateOrName (absolute or relative) If provided, will only get the config for
+     * the requested state. If not provided, returns an array of ALL state configs.
+     * @param {string|object=} context When stateOrName is a relative state reference, the state will be retrieved relative to context.
+     * @returns {Object|Array} State configuration object or array of all objects.
+     */
+    $state.get = function (stateOrName, context) {
+      if (arguments.length === 0) return map(objectKeys(states), function(name) { return states[name].self; });
+      var state = findState(stateOrName, context || $state.$current);
+      return (state && state.self) ? state.self : null;
+    };
+
+    function resolveState(state, params, paramsAreFiltered, inherited, dst, options) {
+      // Make a restricted $stateParams with only the parameters that apply to this state if
+      // necessary. In addition to being available to the controller and onEnter/onExit callbacks,
+      // we also need $stateParams to be available for any $injector calls we make during the
+      // dependency resolution process.
+      var $stateParams = (paramsAreFiltered) ? params : filterByKeys(state.params.$$keys(), params);
+      var locals = { $stateParams: $stateParams };
+
+      // Resolve 'global' dependencies for the state, i.e. those not specific to a view.
+      // We're also including $stateParams in this; that way the parameters are restricted
+      // to the set that should be visible to the state, and are independent of when we update
+      // the global $state and $stateParams values.
+      dst.resolve = $resolve.resolve(state.resolve, locals, dst.resolve, state);
+      var promises = [dst.resolve.then(function (globals) {
+        dst.globals = globals;
+      })];
+      if (inherited) promises.push(inherited);
+
+      function resolveViews() {
+        var viewsPromises = [];
+
+        // Resolve template and dependencies for all views.
+        forEach(state.views, function (view, name) {
+          var injectables = (view.resolve && view.resolve !== state.resolve ? view.resolve : {});
+          injectables.$template = [ function () {
+            return $view.load(name, { view: view, locals: dst.globals, params: $stateParams, notify: options.notify }) || '';
+          }];
+
+          viewsPromises.push($resolve.resolve(injectables, dst.globals, dst.resolve, state).then(function (result) {
+            // References to the controller (only instantiated at link time)
+            if (isFunction(view.controllerProvider) || isArray(view.controllerProvider)) {
+              var injectLocals = angular.extend({}, injectables, dst.globals);
+              result.$$controller = $injector.invoke(view.controllerProvider, null, injectLocals);
+            } else {
+              result.$$controller = view.controller;
+            }
+            // Provide access to the state itself for internal use
+            result.$$state = state;
+            result.$$controllerAs = view.controllerAs;
+            result.$$resolveAs = view.resolveAs;
+            dst[name] = result;
+          }));
+        });
+
+        return $q.all(viewsPromises).then(function(){
+          return dst.globals;
+        });
+      }
+
+      // Wait for all the promises and then return the activation object
+      return $q.all(promises).then(resolveViews).then(function (values) {
+        return dst;
+      });
+    }
+
+    return $state;
+  }
+
+  function shouldSkipReload(to, toParams, from, fromParams, locals, options) {
+    // Return true if there are no differences in non-search (path/object) params, false if there are differences
+    function nonSearchParamsEqual(fromAndToState, fromParams, toParams) {
+      // Identify whether all the parameters that differ between `fromParams` and `toParams` were search params.
+      function notSearchParam(key) {
+        return fromAndToState.params[key].location != "search";
+      }
+      var nonQueryParamKeys = fromAndToState.params.$$keys().filter(notSearchParam);
+      var nonQueryParams = pick.apply({}, [fromAndToState.params].concat(nonQueryParamKeys));
+      var nonQueryParamSet = new $$UMFP.ParamSet(nonQueryParams);
+      return nonQueryParamSet.$$equals(fromParams, toParams);
+    }
+
+    // If reload was not explicitly requested
+    // and we're transitioning to the same state we're already in
+    // and    the locals didn't change
+    //     or they changed in a way that doesn't merit reloading
+    //        (reloadOnParams:false, or reloadOnSearch.false and only search params changed)
+    // Then return true.
+    if (!options.reload && to === from &&
+      (locals === from.locals || (to.self.reloadOnSearch === false && nonSearchParamsEqual(from, fromParams, toParams)))) {
+      return true;
+    }
+  }
+}
+
+angular.module('ui.router.state')
+  .factory('$stateParams', function () { return {}; })
+  .constant("$state.runtime", { autoinject: true })
+  .provider('$state', $StateProvider)
+  // Inject $state to initialize when entering runtime. #2574
+  .run(['$injector', function ($injector) {
+    // Allow tests (stateSpec.js) to turn this off by defining this constant
+    if ($injector.get("$state.runtime").autoinject) {
+      $injector.get('$state');
+    }
+  }]);
+
+
+$ViewProvider.$inject = [];
+function $ViewProvider() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
+
+  this.$get = $get;
+  /**
+   * @ngdoc object
+   * @name ui.router.state.$view
+   *
+   * @requires ui.router.util.$templateFactory
+   * @requires $rootScope
+   *
+   * @description
+   *
+   */
+  $get.$inject = ['$rootScope', '$templateFactory'];
+  function $get(   $rootScope,   $templateFactory) {
+    return {
+      // $view.load('full.viewName', { template: ..., controller: ..., resolve: ..., async: false, params: ... })
+      /**
+       * @ngdoc function
+       * @name ui.router.state.$view#load
+       * @methodOf ui.router.state.$view
+       *
+       * @description
+       *
+       * @param {string} name name
+       * @param {object} options option object.
+       */
+      load: function load(name, options) {
+        var result, defaults = {
+          template: null, controller: null, view: null, locals: null, notify: true, async: true, params: {}
+        };
+        options = extend(defaults, options);
+
+        if (options.view) {
+          result = $templateFactory.fromConfig(options.view, options.params, options.locals);
+        }
+        return result;
+      }
+    };
+  }
+}
+
+angular.module('ui.router.state').provider('$view', $ViewProvider);
+
+/**
+ * @ngdoc object
+ * @name ui.router.state.$uiViewScrollProvider
+ *
+ * @description
+ * Provider that returns the {@link ui.router.state.$uiViewScroll} service function.
+ */
+function $ViewScrollProvider() {
+
+  var useAnchorScroll = false;
+<<<<<<< HEAD
+
+  /**
+   * @ngdoc function
+   * @name ui.router.state.$uiViewScrollProvider#useAnchorScroll
+   * @methodOf ui.router.state.$uiViewScrollProvider
+   *
+   * @description
+   * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) service for
+   * scrolling based on the url anchor.
+   */
+  this.useAnchorScroll = function () {
+    useAnchorScroll = true;
+  };
+
+  /**
+   * @ngdoc object
+   * @name ui.router.state.$uiViewScroll
+   *
+   * @requires $anchorScroll
+   * @requires $timeout
+   *
+   * @description
+   * When called with a jqLite element, it scrolls the element into view (after a
+   * `$timeout` so the DOM has time to refresh).
+   *
+   * If you prefer to rely on `$anchorScroll` to scroll the view to the anchor,
+   * this can be enabled by calling {@link ui.router.state.$uiViewScrollProvider#methods_useAnchorScroll `$uiViewScrollProvider.useAnchorScroll()`}.
+   */
+  this.$get = ['$anchorScroll', '$timeout', function ($anchorScroll, $timeout) {
+    if (useAnchorScroll) {
+      return $anchorScroll;
+    }
+
+    return function ($element) {
+      return $timeout(function () {
+        $element[0].scrollIntoView();
+      }, 0, false);
+    };
+  }];
+}
+
+angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
+
+/**
+ * @ngdoc directive
+ * @name ui.router.state.directive:ui-view
+ *
+ * @requires ui.router.state.$state
+ * @requires $compile
+ * @requires $controller
+ * @requires $injector
+ * @requires ui.router.state.$uiViewScroll
+ * @requires $document
+ *
+ * @restrict ECA
+ *
+ * @description
+ * The ui-view directive tells $state where to place your templates.
+ *
+ * @param {string=} name A view name. The name should be unique amongst the other views in the
+ * same state. You can have views of the same name that live in different states.
+ *
+ * @param {string=} autoscroll It allows you to set the scroll behavior of the browser window
+ * when a view is populated. By default, $anchorScroll is overridden by ui-router's custom scroll
+ * service, {@link ui.router.state.$uiViewScroll}. This custom service let's you
+ * scroll ui-view elements into view when they are populated during a state activation.
+ *
+ * *Note: To revert back to old [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)
+ * functionality, call `$uiViewScrollProvider.useAnchorScroll()`.*
+ *
+ * @param {string=} onload Expression to evaluate whenever the view updates.
+ *
+ * @example
+ * A view can be unnamed or named.
+ * <pre>
+ * <!-- Unnamed -->
+ * <div ui-view></div>
+ *
+ * <!-- Named -->
+ * <div ui-view="viewName"></div>
+ * </pre>
+ *
+ * You can only have one unnamed view within any template (or root html). If you are only using a
+ * single view and it is unnamed then you can populate it like so:
+ * <pre>
+ * <div ui-view></div>
+ * $stateProvider.state("home", {
+ *   template: "<h1>HELLO!</h1>"
+ * })
+ * </pre>
+ *
+ * The above is a convenient shortcut equivalent to specifying your view explicitly with the {@link ui.router.state.$stateProvider#methods_state `views`}
+ * config property, by name, in this case an empty name:
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * But typically you'll only use the views property if you name your view or have more than one view
+ * in the same template. There's not really a compelling reason to name a view if its the only one,
+ * but you could if you wanted, like so:
+ * <pre>
+ * <div ui-view="main"></div>
+ * </pre>
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "main": {
+ *       template: "<h1>HELLO!</h1>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * Really though, you'll use views to set up multiple views:
+ * <pre>
+ * <div ui-view></div>
+ * <div ui-view="chart"></div>
+ * <div ui-view="data"></div>
+ * </pre>
+ *
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
+ *     },
+ *     "chart": {
+ *       template: "<chart_thing/>"
+ *     },
+ *     "data": {
+ *       template: "<data_thing/>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * Examples for `autoscroll`:
+ *
+ * <pre>
+ * <!-- If autoscroll present with no expression,
+ *      then scroll ui-view into view -->
+ * <ui-view autoscroll/>
+ *
+ * <!-- If autoscroll present with valid expression,
+ *      then scroll ui-view into view if expression evaluates to true -->
+ * <ui-view autoscroll='true'/>
+ * <ui-view autoscroll='false'/>
+ * <ui-view autoscroll='scopeVariable'/>
+ * </pre>
+ *
+ * Resolve data:
+ *
+ * The resolved data from the state's `resolve` block is placed on the scope as `$resolve` (this
+ * can be customized using [[ViewDeclaration.resolveAs]]).  This can be then accessed from the template.
+ *
+ * Note that when `controllerAs` is being used, `$resolve` is set on the controller instance *after* the
+ * controller is instantiated.  The `$onInit()` hook can be used to perform initialization code which
+ * depends on `$resolve` data.
+ *
+ * Example usage of $resolve in a view template
+ * <pre>
+ * $stateProvider.state('home', {
+ *   template: '<my-component user="$resolve.user"></my-component>',
+ *   resolve: {
+ *     user: function(UserService) { return UserService.fetchUser(); }
+ *   }
+ * });
+ * </pre>
+ */
+$ViewDirective.$inject = ['$state', '$injector', '$uiViewScroll', '$interpolate', '$q'];
+function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate,   $q) {
+
+  function getService() {
+    return ($injector.has) ? function(service) {
+      return $injector.has(service) ? $injector.get(service) : null;
+    } : function(service) {
+      try {
+        return $injector.get(service);
+      } catch (e) {
+        return null;
+      }
+    };
+  }
+
+  var service = getService(),
+      $animator = service('$animator'),
+      $animate = service('$animate');
+
+  // Returns a set of DOM manipulation functions based on which Angular version
+  // it should use
+  function getRenderer(attrs, scope) {
+    var statics = function() {
+      return {
+        enter: function (element, target, cb) { target.after(element); cb(); },
+        leave: function (element, cb) { element.remove(); cb(); }
+      };
+    };
+
+    if ($animate) {
+      return {
+        enter: function(element, target, cb) {
+          if (angular.version.minor > 2) {
+            $animate.enter(element, null, target).then(cb);
+          } else {
+            $animate.enter(element, null, target, cb);
+          }
+        },
+        leave: function(element, cb) {
+          if (angular.version.minor > 2) {
+            $animate.leave(element).then(cb);
+          } else {
+            $animate.leave(element, cb);
+          }
+        }
+      };
+    }
+
+    if ($animator) {
+      var animate = $animator && $animator(scope, attrs);
+
+      return {
+        enter: function(element, target, cb) {animate.enter(element, null, target); cb(); },
+        leave: function(element, cb) { animate.leave(element); cb(); }
+      };
+    }
+
+    return statics();
+  }
+
+=======
 
         return $state.current;
       }).then(null, function (error) {
@@ -4499,6 +5386,186 @@ angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider)
 $ViewDirective.$inject = ['$state', '$injector', '$uiViewScroll', '$interpolate', '$q'];
 function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate,   $q) {
 
+=======
+
+  /**
+   * @ngdoc function
+   * @name ui.router.state.$uiViewScrollProvider#useAnchorScroll
+   * @methodOf ui.router.state.$uiViewScrollProvider
+   *
+   * @description
+   * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) service for
+   * scrolling based on the url anchor.
+   */
+  this.useAnchorScroll = function () {
+    useAnchorScroll = true;
+  };
+
+  /**
+   * @ngdoc object
+   * @name ui.router.state.$uiViewScroll
+   *
+   * @requires $anchorScroll
+   * @requires $timeout
+   *
+   * @description
+   * When called with a jqLite element, it scrolls the element into view (after a
+   * `$timeout` so the DOM has time to refresh).
+   *
+   * If you prefer to rely on `$anchorScroll` to scroll the view to the anchor,
+   * this can be enabled by calling {@link ui.router.state.$uiViewScrollProvider#methods_useAnchorScroll `$uiViewScrollProvider.useAnchorScroll()`}.
+   */
+  this.$get = ['$anchorScroll', '$timeout', function ($anchorScroll, $timeout) {
+    if (useAnchorScroll) {
+      return $anchorScroll;
+    }
+
+    return function ($element) {
+      return $timeout(function () {
+        $element[0].scrollIntoView();
+      }, 0, false);
+    };
+  }];
+}
+
+angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
+
+/**
+ * @ngdoc directive
+ * @name ui.router.state.directive:ui-view
+ *
+ * @requires ui.router.state.$state
+ * @requires $compile
+ * @requires $controller
+ * @requires $injector
+ * @requires ui.router.state.$uiViewScroll
+ * @requires $document
+ *
+ * @restrict ECA
+ *
+ * @description
+ * The ui-view directive tells $state where to place your templates.
+ *
+ * @param {string=} name A view name. The name should be unique amongst the other views in the
+ * same state. You can have views of the same name that live in different states.
+ *
+ * @param {string=} autoscroll It allows you to set the scroll behavior of the browser window
+ * when a view is populated. By default, $anchorScroll is overridden by ui-router's custom scroll
+ * service, {@link ui.router.state.$uiViewScroll}. This custom service let's you
+ * scroll ui-view elements into view when they are populated during a state activation.
+ *
+ * *Note: To revert back to old [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)
+ * functionality, call `$uiViewScrollProvider.useAnchorScroll()`.*
+ *
+ * @param {string=} onload Expression to evaluate whenever the view updates.
+ *
+ * @example
+ * A view can be unnamed or named.
+ * <pre>
+ * <!-- Unnamed -->
+ * <div ui-view></div>
+ *
+ * <!-- Named -->
+ * <div ui-view="viewName"></div>
+ * </pre>
+ *
+ * You can only have one unnamed view within any template (or root html). If you are only using a
+ * single view and it is unnamed then you can populate it like so:
+ * <pre>
+ * <div ui-view></div>
+ * $stateProvider.state("home", {
+ *   template: "<h1>HELLO!</h1>"
+ * })
+ * </pre>
+ *
+ * The above is a convenient shortcut equivalent to specifying your view explicitly with the {@link ui.router.state.$stateProvider#methods_state `views`}
+ * config property, by name, in this case an empty name:
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * But typically you'll only use the views property if you name your view or have more than one view
+ * in the same template. There's not really a compelling reason to name a view if its the only one,
+ * but you could if you wanted, like so:
+ * <pre>
+ * <div ui-view="main"></div>
+ * </pre>
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "main": {
+ *       template: "<h1>HELLO!</h1>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * Really though, you'll use views to set up multiple views:
+ * <pre>
+ * <div ui-view></div>
+ * <div ui-view="chart"></div>
+ * <div ui-view="data"></div>
+ * </pre>
+ *
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
+ *     },
+ *     "chart": {
+ *       template: "<chart_thing/>"
+ *     },
+ *     "data": {
+ *       template: "<data_thing/>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * Examples for `autoscroll`:
+ *
+ * <pre>
+ * <!-- If autoscroll present with no expression,
+ *      then scroll ui-view into view -->
+ * <ui-view autoscroll/>
+ *
+ * <!-- If autoscroll present with valid expression,
+ *      then scroll ui-view into view if expression evaluates to true -->
+ * <ui-view autoscroll='true'/>
+ * <ui-view autoscroll='false'/>
+ * <ui-view autoscroll='scopeVariable'/>
+ * </pre>
+ *
+ * Resolve data:
+ *
+ * The resolved data from the state's `resolve` block is placed on the scope as `$resolve` (this
+ * can be customized using [[ViewDeclaration.resolveAs]]).  This can be then accessed from the template.
+ *
+ * Note that when `controllerAs` is being used, `$resolve` is set on the controller instance *after* the
+ * controller is instantiated.  The `$onInit()` hook can be used to perform initialization code which
+ * depends on `$resolve` data.
+ *
+ * Example usage of $resolve in a view template
+ * <pre>
+ * $stateProvider.state('home', {
+ *   template: '<my-component user="$resolve.user"></my-component>',
+ *   resolve: {
+ *     user: function(UserService) { return UserService.fetchUser(); }
+ *   }
+ * });
+ * </pre>
+ */
+$ViewDirective.$inject = ['$state', '$injector', '$uiViewScroll', '$interpolate', '$q'];
+function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate,   $q) {
+
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
   function getService() {
     return ($injector.has) ? function(service) {
       return $injector.has(service) ? $injector.get(service) : null;
@@ -4567,6 +5634,7 @@ angular.module('ui.router.state').provider('$view', $ViewProvider);
  * Provider that returns the {@link ui.router.state.$uiViewScroll} service function.
  */
 function $ViewScrollProvider() {
+<<<<<<< HEAD
 
   var useAnchorScroll = false;
 
@@ -4805,6 +5873,247 @@ function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate,
     return statics();
   }
 
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+
+  var useAnchorScroll = false;
+
+  /**
+   * @ngdoc function
+   * @name ui.router.state.$uiViewScrollProvider#useAnchorScroll
+   * @methodOf ui.router.state.$uiViewScrollProvider
+   *
+   * @description
+   * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) service for
+   * scrolling based on the url anchor.
+   */
+  this.useAnchorScroll = function () {
+    useAnchorScroll = true;
+  };
+
+  /**
+   * @ngdoc object
+   * @name ui.router.state.$uiViewScroll
+   *
+   * @requires $anchorScroll
+   * @requires $timeout
+   *
+   * @description
+   * When called with a jqLite element, it scrolls the element into view (after a
+   * `$timeout` so the DOM has time to refresh).
+   *
+   * If you prefer to rely on `$anchorScroll` to scroll the view to the anchor,
+   * this can be enabled by calling {@link ui.router.state.$uiViewScrollProvider#methods_useAnchorScroll `$uiViewScrollProvider.useAnchorScroll()`}.
+   */
+  this.$get = ['$anchorScroll', '$timeout', function ($anchorScroll, $timeout) {
+    if (useAnchorScroll) {
+      return $anchorScroll;
+    }
+
+    return function ($element) {
+      return $timeout(function () {
+        $element[0].scrollIntoView();
+      }, 0, false);
+    };
+  }];
+}
+
+angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
+
+/**
+ * @ngdoc directive
+ * @name ui.router.state.directive:ui-view
+ *
+ * @requires ui.router.state.$state
+ * @requires $compile
+ * @requires $controller
+ * @requires $injector
+ * @requires ui.router.state.$uiViewScroll
+ * @requires $document
+ *
+ * @restrict ECA
+ *
+ * @description
+ * The ui-view directive tells $state where to place your templates.
+ *
+ * @param {string=} name A view name. The name should be unique amongst the other views in the
+ * same state. You can have views of the same name that live in different states.
+ *
+ * @param {string=} autoscroll It allows you to set the scroll behavior of the browser window
+ * when a view is populated. By default, $anchorScroll is overridden by ui-router's custom scroll
+ * service, {@link ui.router.state.$uiViewScroll}. This custom service let's you
+ * scroll ui-view elements into view when they are populated during a state activation.
+ *
+ * *Note: To revert back to old [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)
+ * functionality, call `$uiViewScrollProvider.useAnchorScroll()`.*
+ *
+ * @param {string=} onload Expression to evaluate whenever the view updates.
+ *
+ * @example
+ * A view can be unnamed or named.
+ * <pre>
+ * <!-- Unnamed -->
+ * <div ui-view></div>
+ *
+ * <!-- Named -->
+ * <div ui-view="viewName"></div>
+ * </pre>
+ *
+ * You can only have one unnamed view within any template (or root html). If you are only using a
+ * single view and it is unnamed then you can populate it like so:
+ * <pre>
+ * <div ui-view></div>
+ * $stateProvider.state("home", {
+ *   template: "<h1>HELLO!</h1>"
+ * })
+ * </pre>
+ *
+ * The above is a convenient shortcut equivalent to specifying your view explicitly with the {@link ui.router.state.$stateProvider#methods_state `views`}
+ * config property, by name, in this case an empty name:
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * But typically you'll only use the views property if you name your view or have more than one view
+ * in the same template. There's not really a compelling reason to name a view if its the only one,
+ * but you could if you wanted, like so:
+ * <pre>
+ * <div ui-view="main"></div>
+ * </pre>
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "main": {
+ *       template: "<h1>HELLO!</h1>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * Really though, you'll use views to set up multiple views:
+ * <pre>
+ * <div ui-view></div>
+ * <div ui-view="chart"></div>
+ * <div ui-view="data"></div>
+ * </pre>
+ *
+ * <pre>
+ * $stateProvider.state("home", {
+ *   views: {
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
+ *     },
+ *     "chart": {
+ *       template: "<chart_thing/>"
+ *     },
+ *     "data": {
+ *       template: "<data_thing/>"
+ *     }
+ *   }    
+ * })
+ * </pre>
+ *
+ * Examples for `autoscroll`:
+ *
+ * <pre>
+ * <!-- If autoscroll present with no expression,
+ *      then scroll ui-view into view -->
+ * <ui-view autoscroll/>
+ *
+ * <!-- If autoscroll present with valid expression,
+ *      then scroll ui-view into view if expression evaluates to true -->
+ * <ui-view autoscroll='true'/>
+ * <ui-view autoscroll='false'/>
+ * <ui-view autoscroll='scopeVariable'/>
+ * </pre>
+ *
+ * Resolve data:
+ *
+ * The resolved data from the state's `resolve` block is placed on the scope as `$resolve` (this
+ * can be customized using [[ViewDeclaration.resolveAs]]).  This can be then accessed from the template.
+ *
+ * Note that when `controllerAs` is being used, `$resolve` is set on the controller instance *after* the
+ * controller is instantiated.  The `$onInit()` hook can be used to perform initialization code which
+ * depends on `$resolve` data.
+ *
+ * Example usage of $resolve in a view template
+ * <pre>
+ * $stateProvider.state('home', {
+ *   template: '<my-component user="$resolve.user"></my-component>',
+ *   resolve: {
+ *     user: function(UserService) { return UserService.fetchUser(); }
+ *   }
+ * });
+ * </pre>
+ */
+$ViewDirective.$inject = ['$state', '$injector', '$uiViewScroll', '$interpolate', '$q'];
+function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate,   $q) {
+
+  function getService() {
+    return ($injector.has) ? function(service) {
+      return $injector.has(service) ? $injector.get(service) : null;
+    } : function(service) {
+      try {
+        return $injector.get(service);
+      } catch (e) {
+        return null;
+      }
+    };
+  }
+
+  var service = getService(),
+      $animator = service('$animator'),
+      $animate = service('$animate');
+
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+  // Returns a set of DOM manipulation functions based on which Angular version
+  // it should use
+  function getRenderer(attrs, scope) {
+    var statics = function() {
+      return {
+        enter: function (element, target, cb) { target.after(element); cb(); },
+        leave: function (element, cb) { element.remove(); cb(); }
+      };
+    };
+
+    if ($animate) {
+      return {
+        enter: function(element, target, cb) {
+          if (angular.version.minor > 2) {
+            $animate.enter(element, null, target).then(cb);
+          } else {
+            $animate.enter(element, null, target, cb);
+          }
+        },
+        leave: function(element, cb) {
+          if (angular.version.minor > 2) {
+            $animate.leave(element).then(cb);
+          } else {
+            $animate.leave(element, cb);
+          }
+        }
+      };
+    }
+
+    if ($animator) {
+      var animate = $animator && $animator(scope, attrs);
+
+      return {
+        enter: function(element, target, cb) {animate.enter(element, null, target); cb(); },
+        leave: function(element, cb) { animate.leave(element); cb(); }
+      };
+    }
+
+    return statics();
+  }
+
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
   var directive = {
     restrict: 'ECA',
     terminal: true,
@@ -5385,6 +6694,7 @@ function $StateRefActiveDirective($state, $stateParams, $interpolate) {
       update();
     }]
   };
+<<<<<<< HEAD
 }
 
 angular.module('ui.router.state')
@@ -5430,6 +6740,53 @@ function $IncludedByStateFilter($state) {
 }
 
 angular.module('ui.router.state')
+=======
+}
+
+angular.module('ui.router.state')
+  .directive('uiSref', $StateRefDirective)
+  .directive('uiSrefActive', $StateRefActiveDirective)
+  .directive('uiSrefActiveEq', $StateRefActiveDirective)
+  .directive('uiState', $StateRefDynamicDirective);
+
+/**
+ * @ngdoc filter
+ * @name ui.router.state.filter:isState
+ *
+ * @requires ui.router.state.$state
+ *
+ * @description
+ * Translates to {@link ui.router.state.$state#methods_is $state.is("stateName")}.
+ */
+$IsStateFilter.$inject = ['$state'];
+function $IsStateFilter($state) {
+  var isFilter = function (state, params) {
+    return $state.is(state, params);
+  };
+  isFilter.$stateful = true;
+  return isFilter;
+}
+
+/**
+ * @ngdoc filter
+ * @name ui.router.state.filter:includedByState
+ *
+ * @requires ui.router.state.$state
+ *
+ * @description
+ * Translates to {@link ui.router.state.$state#methods_includes $state.includes('fullOrPartialStateName')}.
+ */
+$IncludedByStateFilter.$inject = ['$state'];
+function $IncludedByStateFilter($state) {
+  var includesFilter = function (state, params, options) {
+    return $state.includes(state, params, options);
+  };
+  includesFilter.$stateful = true;
+  return  includesFilter;
+}
+
+angular.module('ui.router.state')
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
@@ -5438,8 +6795,17 @@ angular.module('ui.router.state')
 <<<<<<< HEAD
 /* 9 */
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* 9 */
+=======
 /* 13 */
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+/* 13 */
+>>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /***/ (function(module, exports) {
 
 /**
@@ -38817,37 +40183,81 @@ $provide.value("$locale", {
 
 /***/ }),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(9);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 =======
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 module.exports = angular;
 
 
 /***/ }),
 <<<<<<< HEAD
 /* 11 */
+<<<<<<< HEAD
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n\tName: {{ $ctrl.current.name }}\n\t<br />\n\tCrime: {{ $ctrl.current.crime }}\n</div>";
+=======
+<<<<<<< HEAD
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\n  Name: {{$ctrl.current.name}}\n  <br/>\n  Crim: {{$ctrl.current.crime}}\n</div>\n";
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n  Name: {{$ctrl.current.name}}\n  <br/>\n  Crim: {{$ctrl.current.crime}}\n</div>\n";
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+module.exports = "<ul class=\"criminals\">\n\t<li ng-show=\"$ctrl.loading\">\n\t\t<strong>Loading...</strong>\n\t</li>\n\n  <li ng-hide=\"$ctrl.loading\" ng-repeat=\"criminal in $ctrl.criminals\">\n    <strong>{{criminal.name}}</strong>\n    \n    <!-- <span ng-if=\"criminal.status\" class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span> -->\n\n    <a ui-sref=\"criminalsShow({ criminalId: criminal._id})\">Click to see their crime (in criminals#show)</a>\n  </li>\n</ul>\n";
+=======
 module.exports = "<ul class=\"criminals\">\n\t<li ng-show=\"$ctrl.loading\">\n\t\t<strong>Loading...</strong>\n\t</li>\n\n  <li ng-hide=\"$ctrl.loading\" ng-repeat=\"criminal in $ctrl.criminals\">\n    <strong>{{criminal.name}}</strong>\n\n\t\t<!-- Reference for Gerry -->\n    <!-- <em>{{criminal.crime}}</em> -->\n\n    <span ng-if=\"criminal.status\" class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span>\n\n    <a ui-sref=\"criminalsShow({criminalId: criminal._id})\">{Click to see their crime (in users#show)</a>\n  </li>\n</ul>\n";
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+module.exports = "<ul class=\"criminals\">\n\t<li ng-show=\"$ctrl.loading\">\n\t\t<strong>Loading...</strong>\n\t</li>\n\n  <li ng-hide=\"$ctrl.loading\" ng-repeat=\"criminal in $ctrl.criminals\">\n    <strong>{{criminal.name}}</strong>\n\n\t\t<!-- Reference for Gerry -->\n    <!-- <em>{{criminal.crime}}</em> -->\n\n    <span ng-if=\"criminal.status\" class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span>\n\n    <a ui-sref=\"criminalsShow({criminalId: criminal._id})\">{Click to see their crime (in users#show)</a>\n  </li>\n</ul>\n";
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
 /***/ }),
 /* 13 */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+module.exports = "<div class=\"home\">\n\t<h1>Home Component</h1>\n\t<h2>Another</h2>\n</div>\n";
+=======
 module.exports = "<div class=\"home\">\n  <h1>Home!!</h1>\n</div>\n";
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+module.exports = "<div class=\"home\">\n  <h1>Home!!</h1>\n</div>\n";
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
 /***/ }),
 /* 14 */
@@ -38860,6 +40270,13 @@ __webpack_require__(5);
 __webpack_require__(1);
 __webpack_require__(6);
 __webpack_require__(2);
+<<<<<<< HEAD
+<<<<<<< HEAD
+__webpack_require__(6);
+module.exports = __webpack_require__(7);
+=======
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 module.exports = __webpack_require__(7);
 =======
 /* 15 */
@@ -38908,6 +40325,10 @@ __webpack_require__(10);
 __webpack_require__(4);
 module.exports = __webpack_require__(11);
 >>>>>>> 683718c45638580d5bb1bb53fcb5a72b1656cb45
+<<<<<<< HEAD
+>>>>>>> 5589bc133bafa8ca4d606b05ef423dfa48528eb5
+=======
+>>>>>>> 05492c7a07476f2408630e07c04047cee1b2c78b
 
 
 /***/ })

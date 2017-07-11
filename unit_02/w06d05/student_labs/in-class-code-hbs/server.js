@@ -4,25 +4,31 @@ var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
 var bodyParser  = require('body-parser');
-var todosController = require('./controllers/todos.js');
+// include the method-override package
+var methodOverride = require('method-override');
 /* app settings*/
 var app         = express();
 var port        = process.env.PORT || 3000;
 /* set up the application params*/
+var todosController = require('./controllers/todos.js');
 
 // log
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
 app.use( logger('dev'));
-app.use('/todos', todosController);
 
 /*Views*/
 app.set('view engine', 'hbs');
+app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+// use methodOverride.  We will be adding a query parameter to our delete form named _method
+app.use(methodOverride('_method'));
+
+app.use('/todos', 'todosController');
 
 /* HOME */
 app.get('/', function(req,res) {
-  res.send('This is our Home Page');
+  res.render('welcome');
 });
 
 // Start server
